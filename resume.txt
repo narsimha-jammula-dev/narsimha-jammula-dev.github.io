@@ -121,6 +121,8 @@ OTHER PUBLIC REPOS
 - my-mario (ljammula.github.io/my-mario) - Super Mario Bros 1985-style browser
   game, HTML5 Canvas + vanilla JS, live on GitHub Pages.
 - todo-service (github.com/ljammula/todo-service) - service written in Go.
+- commit-reminder-app (github.com/ljammula/commit-reminder-app) - web UI microapp
+  to track and remind for local git repo commits and pushes.
 
 Machine-readable versions: https://narsimha-jammula-dev.github.io/resume.json (JSON Resume),
 https://narsimha-jammula-dev.github.io/resume.pdf
