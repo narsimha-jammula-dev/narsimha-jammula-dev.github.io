@@ -12,9 +12,13 @@
 <!-- Open Graph -->
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Laxmi Narsimha Reddy Jammula — Senior Engineering Manager">
-<meta property="og:description" content="14+ years building enterprise applications and leading engineering teams, now building agentic AI systems: coding-agent evaluation harnesses, local LLM infrastructure, autonomous research agents.">
+<meta property="og:description" content="14+ years shipping enterprise software as an engineering leader — now building and evaluating the AI agents doing the shipping.">
 <meta property="og:url" content="https://narsimha-jammula-dev.github.io/">
 <meta name="twitter:card" content="summary">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
 <!-- Structured data for machine/agent readers. Everything below mirrors exactly
      what is rendered in the visible page below — no hidden or injected text. -->
@@ -90,21 +94,26 @@
 
 <style>
   :root {
-    --bg: #ffffff;
-    --fg: #1a1a1a;
-    --muted: #5a5a5a;
-    --accent: #1d5fbf;
-    --border: #e2e2e2;
-    --card: #f7f7f8;
+    --bg: #faf9f6;
+    --panel: #ffffff;
+    --ink: #15181d;
+    --muted: #5b6470;
+    --line: #e3e0d8;
+    --accent: #21463b;
+    --accent-soft: #e7efea;
+    --font-display: "IBM Plex Serif", Georgia, "Times New Roman", serif;
+    --font-body: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
   }
   @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #14161a;
-      --fg: #ececec;
-      --muted: #a6a6a6;
-      --accent: #7ab0ff;
-      --border: #2b2e34;
-      --card: #1c1f24;
+    :root:not([data-theme="light"]) {
+      --bg: #14181b;
+      --panel: #191d20;
+      --ink: #e9eae6;
+      --muted: #9aa3a6;
+      --line: #2a2f33;
+      --accent: #6fcf9e;
+      --accent-soft: #16261f;
     }
   }
   * { box-sizing: border-box; }
@@ -112,70 +121,223 @@
   body {
     margin: 0;
     background: var(--bg);
-    color: var(--fg);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.55;
+    color: var(--ink);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    font-size: 16px;
   }
   main {
-    max-width: 760px;
+    max-width: 980px;
     margin: 0 auto;
-    padding: 2.5rem 1.25rem 4rem;
+    padding: 3rem 1.5rem 4rem;
   }
-  header.hero { margin-bottom: 2rem; }
-  h1 { font-size: 1.9rem; margin: 0 0 0.25rem; }
-  .headline { color: var(--muted); font-size: 1.05rem; margin: 0 0 0.9rem; }
-  .contact-links { display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; font-size: 0.95rem; }
-  .contact-links a { color: var(--accent); text-decoration: none; }
-  .contact-links a:hover { text-decoration: underline; }
-  section { margin-top: 2.2rem; }
-  h2 {
-    font-size: 1.1rem;
+  a { color: var(--accent); }
+  p a, li a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
+  }
+  p a:hover, li a:hover { border-bottom-color: var(--accent); }
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  /* ---------- Masthead ---------- */
+  header.hero {
+    margin-bottom: 2.25rem;
+    animation: rise 0.5s ease-out both;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    header.hero { animation: none; }
+  }
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.09em;
     text-transform: uppercase;
-    letter-spacing: 0.04em;
     color: var(--muted);
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 0.35rem;
-    margin-bottom: 1rem;
+    margin: 0 0 0.6rem;
   }
-  .summary { font-size: 1.02rem; }
-  article.role { margin-bottom: 1.6rem; }
+  h1 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    letter-spacing: -0.01em;
+    margin: 0 0 0.35rem;
+  }
+  .headline {
+    font-family: var(--font-mono);
+    color: var(--muted);
+    font-size: 0.98rem;
+    margin: 0 0 1rem;
+  }
+  .thesis {
+    max-width: 62ch;
+    font-size: 1.08rem;
+    margin: 0 0 1.25rem;
+  }
+  .contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.1rem;
+    font-family: var(--font-mono);
+    font-size: 0.88rem;
+    margin: 0 0 1.5rem;
+  }
+  .contact-links a { border-bottom-color: transparent; }
+  .contact-links a:hover { border-bottom-color: var(--accent); }
+
+  /* ---------- Verdict strip (signature element) ---------- */
+  .verdict-strip {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .stat {
+    background: var(--panel);
+    padding: 0.9rem 1rem;
+    transition: transform 0.15s ease, background 0.15s ease;
+  }
+  .stat:hover { transform: translateY(-2px); background: var(--accent-soft); }
+  .stat .value {
+    display: block;
+    font-family: var(--font-mono);
+    font-weight: 500;
+    font-size: 1.15rem;
+    color: var(--accent);
+    white-space: nowrap;
+  }
+  .stat .label {
+    display: block;
+    font-size: 0.76rem;
+    color: var(--muted);
+    margin-top: 0.2rem;
+    letter-spacing: 0.02em;
+  }
+
+  /* ---------- Layout: main column + rail ---------- */
+  .layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-top: 2.75rem;
+  }
+  @media (min-width: 960px) {
+    .layout { grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); }
+  }
+  .col-rail section:first-child { margin-top: 0; }
+
+  section { margin-top: 2.5rem; }
+  section:first-child { margin-top: 0; }
+  h2 {
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink);
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 0.5rem;
+    margin: 0 0 1.1rem;
+  }
+  .section-note {
+    font-size: 0.92rem;
+    color: var(--muted);
+    margin: -0.4rem 0 1.2rem;
+  }
+
+  article.role { margin-bottom: 1.7rem; }
   article.role:last-child { margin-bottom: 0; }
   .role-head {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
-    gap: 0.25rem 1rem;
+    gap: 0.3rem 1rem;
+    margin-bottom: 0.15rem;
   }
   .role-title { font-weight: 600; }
   .role-org { color: var(--accent); font-weight: 600; }
-  .role-meta { color: var(--muted); font-size: 0.92rem; white-space: nowrap; }
+  .role-tag {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  .role-meta {
+    color: var(--muted);
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    white-space: nowrap;
+  }
+  .badge-active {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    color: var(--accent);
+    background: var(--accent-soft);
+    border-radius: 999px;
+    padding: 0.12rem 0.55rem;
+    margin-left: 0.5rem;
+  }
+  .badge-active::before {
+    content: "";
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    display: inline-block;
+  }
   ul.bullets { margin: 0.5rem 0 0; padding-left: 1.2rem; }
-  ul.bullets li { margin-bottom: 0.25rem; }
+  ul.bullets li { margin-bottom: 0.3rem; }
+
   .skills { display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 0; margin: 0; list-style: none; }
   .skills li {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 999px;
-    padding: 0.3rem 0.8rem;
-    font-size: 0.88rem;
+    font-family: var(--font-mono);
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 0.28rem 0.6rem;
+    font-size: 0.8rem;
   }
+  .skills.secondary li { color: var(--muted); }
+
   .projects article { margin-bottom: 1.1rem; }
-  .projects h3 { font-size: 1rem; margin: 0 0 0.2rem; }
-  .projects p { margin: 0; color: var(--muted); }
-  .projects a { color: var(--accent); }
+  .projects h3 { font-size: 0.98rem; margin: 0 0 0.2rem; font-weight: 600; }
+  .projects p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+
   footer {
-    margin-top: 3rem;
-    padding-top: 1.2rem;
-    border-top: 1px solid var(--border);
-    font-size: 0.85rem;
+    margin-top: 3.5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--line);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
     color: var(--muted);
   }
-  footer a { color: var(--muted); }
+  footer p { margin: 0.4rem 0; }
+  footer a { border-bottom-color: color-mix(in srgb, var(--muted) 40%, transparent); color: var(--muted); }
+  footer a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
   @media print {
     body { background: #fff; color: #000; }
-    .contact-links a, .projects a, footer a { color: #000; text-decoration: underline; }
-    section { margin-top: 1.2rem; }
+    .layout { grid-template-columns: 1fr; gap: 1.4rem; }
+    p a, li a, footer a { color: #000; border-bottom: 1px solid #000; }
+    .stat:hover { transform: none; background: var(--panel); }
+    header.hero { animation: none; }
   }
 </style>
 </head>
@@ -183,187 +345,225 @@
 <main>
 
   <header class="hero">
+    <p class="eyebrow">Resume · Dallas–Fort Worth, TX (Remote)</p>
     <h1>Laxmi Narsimha Reddy Jammula</h1>
-    <p class="headline">Senior Engineering Manager · Full Stack Developer</p>
+    <p class="headline">Senior Engineering Manager · Full Stack Developer · goes by "Narsimha"</p>
+    <p class="thesis">
+      14 years shipping enterprise software as an engineering leader — now applying
+      the same rigor to the coding agents doing the shipping: control arms,
+      replicated trials, versioned verdicts.
+    </p>
     <p class="contact-links">
       <a href="mailto:jlnarsimhareddy@gmail.com">jlnarsimhareddy@gmail.com</a>
       <a href="https://github.com/ljammula">github.com/ljammula</a>
-      <a href="https://www.linkedin.com/in/laxmi-narsimha-reddy-jammula-37486228/">LinkedIn</a>
-      <a href="/resume.pdf">Download PDF</a>
+      <a href="https://www.linkedin.com/in/laxmi-narsimha-reddy-jammula-37486228/">linkedin</a>
+      <a href="/resume.pdf">download pdf</a>
     </p>
+    <div class="verdict-strip">
+      <div class="stat"><span class="value">14+ yrs</span><span class="label">engineering leadership</span></div>
+      <div class="stat"><span class="value">5</span><span class="label">employers, Shipt → McDonald's</span></div>
+      <div class="stat"><span class="value">20×</span><span class="label">order-fulfillment efficiency (Shipt)</span></div>
+      <div class="stat"><span class="value">0/4 → 4/4</span><span class="label">agent-eval regression, diagnosed &amp; fixed</span></div>
+      <div class="stat"><span class="value">60</span><span class="label">tickers/night, autonomous research pipeline</span></div>
+    </div>
   </header>
 
-  <section id="summary">
-    <h2>Summary</h2>
-    <p class="summary">
-      Dedicated Engineering Leader / Full Stack Developer with 14+ years of experience
-      developing enterprise applications using Go, Java, C#, Python, relational
-      databases, and JavaScript. Experienced in managing cross-functional teams and
-      integrating Data Science / Machine Learning solutions. Strong track record in
-      delivering results through agile methodologies. Over the past six months, has
-      been building and operating agentic AI systems independently — coding-agent
-      harness engineering, local LLM infrastructure, and autonomous research agents
-      (detailed below) — alongside core engineering-management responsibilities.
-    </p>
-  </section>
+  <div class="layout">
+    <div class="col-main">
 
-  <section id="agentic-work">
-    <h2>AI &amp; Agentic Engineering — Recent Work (2026)</h2>
-    <p class="summary">
-      Independent, hands-on work over the last ~6 months, run outside of core job
-      responsibilities. Some of the underlying repositories are private (config/
-      infrastructure detail not meant for public release); named here without links
-      for that reason, not omitted.
-    </p>
-    <article class="role">
-      <div class="role-head"><span class="role-title">Coding-agent harness engineering &amp; evaluation</span></div>
-      <ul class="bullets">
-        <li>Hardened and customized the Pi coding-agent harness for daily use: a pinned TypeScript contract test suite, a current-diff quality gate, project-scoped configuration overlays, stack-aware routing, an external-effect guard, symlink-safe path checks, versioned trace records, and a Docker containment profile.</li>
-        <li>Designed and ran controlled agentic-coding benchmarks (Harbor framework, blinded model-based review, replicated trials) comparing agent harnesses — including Claude Code, Codex CLI, Copilot CLI, and Pi — across Go and Flutter/Dart tasks.</li>
-        <li>Diagnosed a decoding-configuration regression (disabled reasoning, undocumented greedy decoding) that flipped a replicated coding-benchmark result from 0/4 to 4/4, and built supporting evaluation tooling (stall detection, wall-clock budget nudging) used in later runs.</li>
-      </ul>
-    </article>
-    <article class="role">
-      <div class="role-head"><span class="role-title">Local LLM infrastructure</span></div>
-      <ul class="bullets">
-        <li>Operated multi-host local LLM inference infrastructure across two hardware generations: an NVIDIA DGX Spark (GB10) two-host cluster running llama-swap behind a LiteLLM proxy with Tailscale remote access, then a consolidated Apple MLX stack on a Mac Studio M3 Ultra serving code-generation, chat, web-search, and speech-to-text models concurrently — with validated rollback procedures for every model swap.</li>
-        <li>Also evaluates OpenClaw, a separate autonomous coding agent, alongside Claude Code and Pi as part of this agent-tooling work.</li>
-      </ul>
-    </article>
-    <article class="role">
-      <div class="role-head"><span class="role-title">Personal multi-agent assistant (Hermes)</span></div>
-      <ul class="bullets">
-        <li>Operates a personal AI assistant built on distinct agent profiles — a coding agent, a research agent, and a Kanban-style orchestrator agent — driven by cron-scheduled prompts, including one that runs an ongoing product-idea research pipeline end to end.</li>
-      </ul>
-    </article>
-    <article class="role">
-      <div class="role-head"><span class="role-title">Cross-platform apps: DayTrix &amp; Personal Budget Simplifier</span></div>
-      <ul class="bullets">
-        <li>Designing, building, and shipping DayTrix from one Flutter codebase to web, iOS, and Android, backed by a Go API. Live on the web now at <a href="https://personal-assistant-kkkbm3cwkq-uc.a.run.app">personal-assistant-kkkbm3cwkq-uc.a.run.app</a> (Google Cloud Run); iOS builds ship via Xcode Cloud → TestFlight. CI/CD to Cloud Run, Firebase backend services, and Playwright end-to-end test coverage.</li>
-        <li>Also built Personal Budget Simplifier, a second Go + Flutter app (macOS, Windows, Linux, Web, iOS) for CSV-based budget tracking with a pure-Go SQLite backend.</li>
-      </ul>
-    </article>
-    <article class="role">
-      <div class="role-head"><span class="role-title">Autonomous research agents</span></div>
-      <ul class="bullets">
-        <li>Operate a nightly automated financial-research pipeline (FinRobot-based) covering 40+ tickers with automated retry/failure handling.</li>
-        <li>Maintain a running daily research log tracking agent-protocol developments — Model Context Protocol (MCP) and Agent2Agent (A2A) — kept continuously since mid-2026.</li>
-        <li>Built an MCP server (Go + Python) exposing a task-management agent.</li>
-      </ul>
-    </article>
-  </section>
+      <section id="summary">
+        <h2>Summary</h2>
+        <p>
+          Dedicated Engineering Leader / Full Stack Developer with 14+ years of experience
+          developing enterprise applications using Go, Java, C#, Python, relational
+          databases, and JavaScript. Experienced in managing cross-functional teams and
+          integrating Data Science / Machine Learning solutions. Strong track record in
+          delivering results through agile methodologies. Recent 2026 work has focused
+          on building and operating agentic AI systems independently — coding-agent
+          harness engineering, local LLM infrastructure, and autonomous research agents
+          (detailed below) — alongside core engineering-management responsibilities.
+        </p>
+      </section>
 
-  <section id="experience">
-    <h2>Professional Experience</h2>
+      <section id="agentic-work">
+        <h2>AI &amp; Agentic Engineering — Recent Work (2026)</h2>
+        <p class="section-note">
+          Independent, hands-on work run outside of core job
+          responsibilities. Some of the underlying repositories are private (config/
+          infrastructure detail not meant for public release); named here without links
+          for that reason, not omitted.
+        </p>
 
-    <article class="role">
-      <div class="role-head">
-        <span><span class="role-title">Senior Engineering Manager</span> · <span class="role-org">Shipt</span></span>
-        <span class="role-meta">Dallas, TX (Remote) · <time datetime="2022-06">Jun 2022</time>–Present</span>
-      </div>
-      <ul class="bullets">
-        <li>Managing a team of high performing engineers to develop Tier-0 asynchronous distributed microservices with baked in instrumentation, monitoring and alerting</li>
-        <li>Collaborated with cross-functional teams to achieve 20x efficiency gains in order fulfillment</li>
-        <li>Developed and maintained microservices using Go, Python, PostgreSQL, Docker</li>
-        <li>Mentored and led high-performing cross-functional remote team</li>
-        <li>Recognized for timely initiative delivery</li>
-      </ul>
-    </article>
+        <article class="role">
+          <span class="role-tag">Harness engineering &amp; evaluation</span>
+          <div class="role-head"><span class="role-title">Coding-agent harness engineering &amp; evaluation</span></div>
+          <ul class="bullets">
+            <li>Hardened and customized the Pi coding-agent harness for daily use: a pinned TypeScript contract test suite, a current-diff quality gate, project-scoped configuration overlays, stack-aware routing, an external-effect guard, symlink-safe path checks, versioned trace records, and a Docker containment profile.</li>
+            <li>Designed and ran controlled agentic-coding benchmarks (Harbor framework, blinded model-based review, replicated trials) comparing agent harnesses — including Claude Code, Codex CLI, Copilot CLI, and Pi — across Go and Flutter/Dart tasks.</li>
+            <li>Diagnosed a decoding-configuration regression (disabled reasoning, undocumented greedy decoding) that flipped a replicated coding-benchmark result from 0/4 to 4/4, and built supporting evaluation tooling (stall detection, wall-clock budget nudging) used in later runs.</li>
+          </ul>
+        </article>
 
-    <article class="role">
-      <div class="role-head">
-        <span><span class="role-title">Software Engineering Manager</span> · <span class="role-org">CareXM</span></span>
-        <span class="role-meta">Salt Lake City, UT · <time datetime="2020-12">Dec 2020</time>–<time datetime="2022-06">Jun 2022</time></span>
-      </div>
-      <ul class="bullets">
-        <li>Managed Full Stack Dev &amp; QA teams delivering Web, Mobile &amp; Desktop applications</li>
-        <li>Led modernizing tech stack by replacing MVC architecture with microservices and single page application</li>
-        <li>Setup CI/CD pipeline, ensured successful releases with proper observability &amp; monitoring</li>
-        <li>Pioneered integration test automation, established on-call support &amp; incident alerting</li>
-        <li>Acknowledged for outstanding project deliveries</li>
-      </ul>
-    </article>
+        <article class="role">
+          <span class="role-tag">Infrastructure</span>
+          <div class="role-head"><span class="role-title">Local LLM infrastructure</span></div>
+          <ul class="bullets">
+            <li>Operated multi-host local LLM inference infrastructure across two hardware generations: an NVIDIA DGX Spark (GB10) two-host cluster running llama-swap behind a LiteLLM proxy with Tailscale remote access, then a consolidated Apple MLX stack on a Mac Studio M3 Ultra serving code-generation, chat, web-search, and speech-to-text models concurrently — with validated rollback procedures for every model swap.</li>
+            <li>Also evaluates OpenClaw, a separate autonomous coding agent, alongside Claude Code and Pi as part of this agent-tooling work.</li>
+          </ul>
+        </article>
 
-    <article class="role">
-      <div class="role-head">
-        <span><span class="role-title">Assistant Director | Senior Software Engineer | Data Scientist</span> · <span class="role-org">Progrexion</span></span>
-        <span class="role-meta">Salt Lake City, UT · <time datetime="2017-09">Sep 2017</time>–<time datetime="2020-12">Dec 2020</time></span>
-      </div>
-      <ul class="bullets">
-        <li>Managed Data Science, ML, and Software Development teams</li>
-        <li>Led ML model integration into application workflows</li>
-        <li>Developed RESTful services, asynchronous batch processing</li>
-        <li>Mentored and led team, achieved successful results</li>
-      </ul>
-    </article>
+        <article class="role">
+          <span class="role-tag">Multi-agent systems</span>
+          <div class="role-head"><span class="role-title">Personal multi-agent assistant (Hermes)</span></div>
+          <ul class="bullets">
+            <li>Operates a personal AI assistant built on distinct agent profiles — a coding agent, a research agent, and a Kanban-style orchestrator agent — driven by cron-scheduled prompts, including one that runs an ongoing product-idea research pipeline end to end.</li>
+          </ul>
+        </article>
 
-    <article class="role">
-      <div class="role-head">
-        <span><span class="role-title">Senior Application Development Consultant</span> · <span class="role-org">Goldman Sachs</span></span>
-        <span class="role-meta">Salt Lake City, UT · <time datetime="2015-04">Apr 2015</time>–<time datetime="2016-11">Nov 2016</time></span>
-      </div>
-    </article>
+        <article class="role">
+          <span class="role-tag">Cross-platform product</span>
+          <div class="role-head"><span class="role-title">DayTrix &amp; Personal Budget Simplifier</span></div>
+          <ul class="bullets">
+            <li>Designing, building, and shipping DayTrix from one Flutter codebase to web, iOS, and Android, backed by a Go API. Live on the web now at <a href="https://personal-assistant-kkkbm3cwkq-uc.a.run.app">personal-assistant-kkkbm3cwkq-uc.a.run.app</a> (Google Cloud Run); iOS builds ship via Xcode Cloud → TestFlight. CI/CD to Cloud Run, Firebase backend services, and Playwright end-to-end test coverage.</li>
+            <li>Also built Personal Budget Simplifier, a second Go + Flutter app (macOS, Windows, Linux, Web, iOS) for CSV-based budget tracking with a pure-Go SQLite backend.</li>
+          </ul>
+        </article>
 
-    <article class="role">
-      <div class="role-head">
-        <span><span class="role-title">Senior Software Engineer</span> · <span class="role-org">McDonald's Corporation (IGATE)</span></span>
-        <span class="role-meta">Chicago, IL / Pune, India · <time datetime="2011-12">Dec 2011</time>–<time datetime="2015-04">Apr 2015</time></span>
-      </div>
-    </article>
-  </section>
+        <article class="role">
+          <span class="role-tag">Automation</span>
+          <div class="role-head"><span class="role-title">Autonomous research agents</span></div>
+          <ul class="bullets">
+            <li>Operate a nightly automated financial-research pipeline (FinRobot-based) covering 60 tickers and indices with automated retry/failure handling.</li>
+            <li>Maintain a running daily research log tracking agent-protocol developments — Model Context Protocol (MCP) and Agent2Agent (A2A) — kept continuously since mid-2026.</li>
+            <li>Built an MCP server (Go + Python) exposing a task-management agent.</li>
+          </ul>
+        </article>
+      </section>
 
-  <section id="education">
-    <h2>Education</h2>
-    <p><strong>Bachelor of Technology, Computer Science and Engineering</strong><br>
-    Jawaharlal Nehru Technological University (JNTU), India</p>
-  </section>
+      <section id="experience">
+        <h2>Professional Experience</h2>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul class="skills">
-      <li>Go</li><li>Java</li><li>C#</li><li>Python</li><li>JavaScript</li>
-      <li>Relational Databases</li><li>Microservices</li><li>CI/CD</li>
-      <li>RESTful Services</li><li>Data Science</li><li>Machine Learning</li>
-      <li>Engineering Management</li><li>Agile Methodologies</li>
-    </ul>
-    <p class="summary" style="margin-top:1rem;">Also working with as of 2026, evidenced by the work above:</p>
-    <ul class="skills">
-      <li>Agentic AI Systems</li><li>AI Coding Agents</li>
-      <li>Model Context Protocol (MCP)</li><li>Agent2Agent Protocol (A2A)</li>
-      <li>LLM Evaluation &amp; Benchmarking</li><li>Local LLM Inference (Apple MLX)</li>
-      <li>LiteLLM</li><li>Tailscale</li>
-      <li>Flutter</li><li>Firebase</li><li>Google Cloud Run</li><li>Docker</li>
-      <li>SQLite</li><li>TypeScript</li>
-    </ul>
-  </section>
+        <article class="role">
+          <div class="role-head">
+            <span><span class="role-title">Senior Engineering Manager</span> · <span class="role-org">Shipt</span><span class="badge-active">active</span></span>
+            <span class="role-meta">Dallas, TX (Remote) · <time datetime="2022-06">Jun 2022</time>–Present</span>
+          </div>
+          <ul class="bullets">
+            <li>Managing a team of high performing engineers to develop Tier-0 asynchronous distributed microservices with baked in instrumentation, monitoring and alerting</li>
+            <li>Collaborated with cross-functional teams to achieve 20x efficiency gains in order fulfillment</li>
+            <li>Developed and maintained microservices using Go, Python, PostgreSQL, Docker</li>
+            <li>Mentored and led high-performing cross-functional remote team</li>
+            <li>Recognized for timely initiative delivery</li>
+          </ul>
+        </article>
 
-  <section id="projects" class="projects">
-    <h2>Other public repos</h2>
-    <article>
-      <h3><a href="https://github.com/ljammula/my-mario">my-mario</a></h3>
-      <p>A Super Mario–style browser game, live on GitHub Pages at
-      <a href="https://ljammula.github.io/my-mario/">ljammula.github.io/my-mario</a>.</p>
-    </article>
-    <article>
-      <h3><a href="https://github.com/ljammula/todo-service">todo-service</a></h3>
-      <p>A small service written in Go.</p>
-    </article>
-    <article>
-      <h3><a href="https://github.com/ljammula/commit-reminder-app">commit-reminder-app</a></h3>
-      <p>Web UI microapp to track and remind for local git repo commits and pushes — scans projects, shows a dashboard, and notifies.</p>
-    </article>
-  </section>
+        <article class="role">
+          <div class="role-head">
+            <span><span class="role-title">Software Engineering Manager</span> · <span class="role-org">CareXM</span></span>
+            <span class="role-meta">Salt Lake City, UT · <time datetime="2020-12">Dec 2020</time>–<time datetime="2022-06">Jun 2022</time></span>
+          </div>
+          <ul class="bullets">
+            <li>Managed Full Stack Dev &amp; QA teams delivering Web, Mobile &amp; Desktop applications</li>
+            <li>Led modernizing tech stack by replacing MVC architecture with microservices and single page application</li>
+            <li>Setup CI/CD pipeline, ensured successful releases with proper observability &amp; monitoring</li>
+            <li>Pioneered integration test automation, established on-call support &amp; incident alerting</li>
+            <li>Acknowledged for outstanding project deliveries</li>
+          </ul>
+        </article>
+
+        <article class="role">
+          <div class="role-head">
+            <span><span class="role-title">Assistant Director | Senior Software Engineer | Data Scientist</span> · <span class="role-org">Progrexion</span></span>
+            <span class="role-meta">Salt Lake City, UT · <time datetime="2017-09">Sep 2017</time>–<time datetime="2020-12">Dec 2020</time></span>
+          </div>
+          <ul class="bullets">
+            <li>Managed Data Science, ML, and Software Development teams</li>
+            <li>Led ML model integration into application workflows</li>
+            <li>Developed RESTful services, asynchronous batch processing</li>
+            <li>Mentored and led team, achieved successful results</li>
+          </ul>
+        </article>
+
+        <article class="role">
+          <div class="role-head">
+            <span><span class="role-title">Senior Application Development Consultant</span> · <span class="role-org">Goldman Sachs</span></span>
+            <span class="role-meta">Salt Lake City, UT · <time datetime="2015-04">Apr 2015</time>–<time datetime="2016-11">Nov 2016</time></span>
+          </div>
+        </article>
+
+        <article class="role">
+          <div class="role-head">
+            <span><span class="role-title">Senior Software Engineer</span> · <span class="role-org">McDonald's Corporation (IGATE)</span></span>
+            <span class="role-meta">Chicago, IL / Pune, India · <time datetime="2011-12">Dec 2011</time>–<time datetime="2015-04">Apr 2015</time></span>
+          </div>
+        </article>
+      </section>
+
+    </div>
+
+    <div class="col-rail">
+
+      <section id="education">
+        <h2>Education</h2>
+        <p><strong>Bachelor of Technology, Computer Science and Engineering</strong><br>
+        Jawaharlal Nehru Technological University (JNTU), India</p>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills">
+          <li>Go</li><li>Java</li><li>C#</li><li>Python</li><li>JavaScript</li>
+          <li>Relational Databases</li><li>Microservices</li><li>CI/CD</li>
+          <li>RESTful Services</li><li>Data Science</li><li>Machine Learning</li>
+          <li>Engineering Management</li><li>Agile Methodologies</li>
+        </ul>
+        <p class="section-note" style="margin-top:1rem; margin-bottom:0.7rem;">Also working with as of 2026, evidenced by the work at left:</p>
+        <ul class="skills secondary">
+          <li>Agentic AI Systems</li><li>AI Coding Agents</li>
+          <li>Model Context Protocol (MCP)</li><li>Agent2Agent Protocol (A2A)</li>
+          <li>LLM Evaluation &amp; Benchmarking</li><li>Local LLM Inference (Apple MLX)</li>
+          <li>LiteLLM</li><li>Tailscale</li>
+          <li>Flutter</li><li>Firebase</li><li>Google Cloud Run</li><li>Docker</li>
+          <li>SQLite</li><li>TypeScript</li>
+        </ul>
+      </section>
+
+      <section id="projects" class="projects">
+        <h2>Other public repos</h2>
+        <article>
+          <h3><a href="https://github.com/ljammula/my-mario">my-mario</a></h3>
+          <p>A Super Mario–style browser game, live on GitHub Pages at
+          <a href="https://ljammula.github.io/my-mario/">ljammula.github.io/my-mario</a>.</p>
+        </article>
+        <article>
+          <h3><a href="https://github.com/ljammula/todo-service">todo-service</a></h3>
+          <p>A small service written in Go.</p>
+        </article>
+        <article>
+          <h3><a href="https://github.com/ljammula/commit-reminder-app">commit-reminder-app</a></h3>
+          <p>Web UI microapp to track and remind for local git repo commits and pushes — scans projects, shows a dashboard, and notifies.</p>
+        </article>
+      </section>
+
+      <section id="machine-readable">
+        <h2>Also published as</h2>
+        <p class="section-note" style="margin-bottom:0.6rem;">Machine-readable versions of everything on this page:</p>
+        <ul class="skills">
+          <li><a href="/resume.json">resume.json</a></li>
+          <li><a href="/resume.txt">resume.txt</a></li>
+          <li><a href="/resume.pdf">resume.pdf</a></li>
+        </ul>
+      </section>
+
+    </div>
+  </div>
 
   <footer>
-    <p>
-      Also published as machine-readable data:
-      <a href="/resume.json">resume.json</a> (JSON Resume) ·
-      <a href="/resume.txt">resume.txt</a> (plain text) ·
-      <a href="/resume.pdf">resume.pdf</a>
-    </p>
-    <p>Every fact on this page is drawn from the author's own resume. No hidden text,
-    keyword stuffing, or instructions to automated readers are present anywhere on
-    this site.</p>
+    <p>Every fact on this page is drawn from the author's own resume and git history.
+    No hidden text, keyword stuffing, or instructions to automated readers are
+    present anywhere on this site.</p>
+    <p>Static HTML, no JavaScript, no external assets besides fonts. Last verified 2026-08-20.</p>
   </footer>
 
 </main>

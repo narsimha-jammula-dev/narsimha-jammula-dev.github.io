@@ -5,7 +5,7 @@
     "label": "Senior Engineering Manager",
     "email": "jlnarsimhareddy@gmail.com",
     "url": "https://narsimha-jammula-dev.github.io/",
-    "summary": "Dedicated Engineering Leader / Full Stack Developer with 14+ years of experience developing enterprise applications using Go, Java, C#, Python, relational databases, and JavaScript. Experienced in managing cross-functional teams and integrating Data Science/Machine Learning solutions. Strong track record in delivering results through agile methodologies. Over the past six months, has been building and operating agentic AI systems independently -- coding-agent harness engineering, local LLM infrastructure, and autonomous research agents -- alongside core engineering-management responsibilities.",
+    "summary": "Dedicated Engineering Leader / Full Stack Developer with 14+ years of experience developing enterprise applications using Go, Java, C#, Python, relational databases, and JavaScript. Experienced in managing cross-functional teams and integrating Data Science/Machine Learning solutions. Strong track record in delivering results through agile methodologies. Recent 2026 work has focused on building and operating agentic AI systems independently -- coding-agent harness engineering, local LLM infrastructure, and autonomous research agents -- alongside core engineering-management responsibilities.",
     "location": {
       "region": "Dallas, TX",
       "countryCode": "US"
@@ -110,7 +110,7 @@
     },
     {
       "name": "Autonomous research agents",
-      "description": "Operate a nightly automated financial-research pipeline (FinRobot-based) covering 40+ tickers with automated retry/failure handling. Maintain a running daily research log tracking Model Context Protocol (MCP) and Agent2Agent (A2A) developments, kept continuously since mid-2026. Built an MCP server (Go + Python) exposing a task-management agent.",
+      "description": "Operate a nightly automated financial-research pipeline (FinRobot-based) covering 60 tickers and indices with automated retry/failure handling. Maintain a running daily research log tracking Model Context Protocol (MCP) and Agent2Agent (A2A) developments, kept continuously since mid-2026. Built an MCP server (Go + Python) exposing a task-management agent.",
       "keywords": ["Agentic AI", "MCP", "A2A", "Automation"],
       "startDate": "2026-07-10",
       "roles": ["Sole developer"],

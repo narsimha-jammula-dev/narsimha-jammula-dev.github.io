@@ -10,13 +10,13 @@ Dedicated Engineering Leader / Full Stack Developer with 14+ years of experience
 developing enterprise applications using Go, Java, C#, Python, relational databases,
 and JavaScript. Experienced in managing cross-functional teams and integrating Data
 Science/Machine Learning solutions. Strong track record in delivering results through
-agile methodologies. Over the past six months, has been building and operating
+agile methodologies. Recent 2026 work has focused on building and operating
 agentic AI systems independently -- coding-agent harness engineering, local LLM
 infrastructure, and autonomous research agents (see below) -- alongside core
 engineering-management responsibilities.
 
 AI & AGENTIC ENGINEERING - RECENT WORK (2026)
-Independent, hands-on work over the last ~6 months, run outside of core job
+Independent, hands-on work run outside of core job
 responsibilities. Some underlying repositories are private (config/infrastructure
 detail not meant for public release); named here without links for that reason,
 not omitted.
@@ -63,7 +63,7 @@ Cross-platform apps: DayTrix & Personal Budget Simplifier
 
 Autonomous research agents
 - Operate a nightly automated financial-research pipeline (FinRobot-based) covering
-  40+ tickers with automated retry/failure handling.
+  60 tickers and indices with automated retry/failure handling.
 - Maintain a running daily research log tracking agent-protocol developments --
   Model Context Protocol (MCP) and Agent2Agent (A2A) -- kept continuously since
   mid-2026.
