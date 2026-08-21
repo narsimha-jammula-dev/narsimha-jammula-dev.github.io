@@ -10,7 +10,64 @@ Dedicated Engineering Leader / Full Stack Developer with 14+ years of experience
 developing enterprise applications using Go, Java, C#, Python, relational databases,
 and JavaScript. Experienced in managing cross-functional teams and integrating Data
 Science/Machine Learning solutions. Strong track record in delivering results through
-agile methodologies.
+agile methodologies. Over the past six months, has been building and operating
+agentic AI systems independently -- coding-agent harness engineering, local LLM
+infrastructure, and autonomous research agents (see below) -- alongside core
+engineering-management responsibilities.
+
+AI & AGENTIC ENGINEERING - RECENT WORK (2026)
+Independent, hands-on work over the last ~6 months, run outside of core job
+responsibilities. Some underlying repositories are private (config/infrastructure
+detail not meant for public release); named here without links for that reason,
+not omitted.
+
+Coding-agent harness engineering & evaluation
+- Hardened and customized the Pi coding-agent harness for daily use: a pinned
+  TypeScript contract test suite, a current-diff quality gate, project-scoped
+  configuration overlays, stack-aware routing, an external-effect guard,
+  symlink-safe path checks, versioned trace records, and a Docker containment
+  profile.
+- Designed and ran controlled agentic-coding benchmarks (Harbor framework, blinded
+  model-based review, replicated trials) comparing agent harnesses -- including
+  Claude Code, Codex CLI, Copilot CLI, and Pi -- across Go and Flutter/Dart tasks.
+- Diagnosed a decoding-configuration regression (disabled reasoning, undocumented
+  greedy decoding) that flipped a replicated coding-benchmark result from 0/4 to
+  4/4, and built supporting evaluation tooling (stall detection, wall-clock budget
+  nudging) used in later runs.
+
+Local LLM infrastructure
+- Operated multi-host local LLM inference infrastructure across two hardware
+  generations: an NVIDIA DGX Spark (GB10) two-host cluster running llama-swap
+  behind a LiteLLM proxy with Tailscale remote access, then a consolidated Apple
+  MLX stack on a Mac Studio M3 Ultra serving code-generation, chat, web-search,
+  and speech-to-text models concurrently, with validated rollback procedures for
+  every model swap.
+- Also evaluates OpenClaw, a separate autonomous coding agent, alongside Claude
+  Code and Pi as part of this agent-tooling work.
+
+Personal multi-agent assistant (Hermes)
+- Operates a personal AI assistant built on distinct agent profiles -- a coding
+  agent, a research agent, and a Kanban-style orchestrator agent -- driven by
+  cron-scheduled prompts, including one that runs an ongoing product-idea
+  research pipeline end to end.
+
+Cross-platform apps: DayTrix & Personal Budget Simplifier
+- Designing, building, and shipping DayTrix from one Flutter codebase to web, iOS,
+  and Android, backed by a Go API. Live on the web now at
+  https://personal-assistant-kkkbm3cwkq-uc.a.run.app (Google Cloud Run); iOS builds
+  ship via Xcode Cloud -> TestFlight. CI/CD to Cloud Run, Firebase backend
+  services, and Playwright end-to-end test coverage.
+- Also built Personal Budget Simplifier, a second Go + Flutter app (macOS,
+  Windows, Linux, Web, iOS) for CSV-based budget tracking with a pure-Go SQLite
+  backend.
+
+Autonomous research agents
+- Operate a nightly automated financial-research pipeline (FinRobot-based) covering
+  40+ tickers with automated retry/failure handling.
+- Maintain a running daily research log tracking agent-protocol developments --
+  Model Context Protocol (MCP) and Agent2Agent (A2A) -- kept continuously since
+  mid-2026.
+- Built an MCP server (Go + Python) exposing a task-management agent.
 
 EDUCATION
 Bachelor of Technology, Computer Science and Engineering
@@ -55,9 +112,12 @@ Go, Java, C#, Python, JavaScript, Relational Databases, Microservices, CI/CD,
 RESTful Services, Data Science, Machine Learning, Engineering Management,
 Agile Methodologies
 
-BEYOND THE DAY JOB
-- Maintains a private multi-agent configuration toolchain spanning Claude Code, Codex
-  CLI, and Copilot CLI, and runs local-vs-cloud LLM coding benchmarks.
+Also working with as of 2026, evidenced by the work above: Agentic AI Systems,
+AI Coding Agents, Model Context Protocol (MCP), Agent2Agent Protocol (A2A),
+LLM Evaluation & Benchmarking, Local LLM Inference (Apple MLX), LiteLLM,
+Tailscale, Flutter, Firebase, Google Cloud Run, Docker, SQLite, TypeScript
+
+OTHER PUBLIC REPOS
 - my-mario-2 (github.com/ljammula/my-mario-2) - browser game, Vite + TypeScript,
   deployed on GitHub Pages.
 - todo-service (github.com/ljammula/todo-service) - service written in Go.

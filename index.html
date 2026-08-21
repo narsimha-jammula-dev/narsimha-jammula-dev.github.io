@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Laxmi Narsimha Reddy Jammula — Senior Engineering Manager</title>
-<meta name="description" content="Laxmi Narsimha Reddy Jammula (Narsimha) — Senior Engineering Manager / Full Stack Developer with 14+ years building enterprise applications in Go, Java, C#, Python, and JavaScript.">
+<meta name="description" content="Laxmi Narsimha Reddy Jammula (Narsimha) — Senior Engineering Manager / Full Stack Developer with 14+ years building enterprise applications in Go, Java, C#, Python, and JavaScript. Currently building agentic AI systems: coding-agent harness evaluation, local LLM infrastructure, and autonomous research agents.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://narsimha-jammula-dev.github.io/">
 <link rel="alternate" type="application/json" href="/resume.json" title="Machine-readable resume (JSON Resume)">
@@ -12,7 +12,7 @@
 <!-- Open Graph -->
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Laxmi Narsimha Reddy Jammula — Senior Engineering Manager">
-<meta property="og:description" content="14+ years building enterprise applications and leading engineering teams. Go, Java, C#, Python, JavaScript, Data Science/ML.">
+<meta property="og:description" content="14+ years building enterprise applications and leading engineering teams, now building agentic AI systems: coding-agent evaluation harnesses, local LLM infrastructure, autonomous research agents.">
 <meta property="og:url" content="https://narsimha-jammula-dev.github.io/">
 <meta name="twitter:card" content="summary">
 
@@ -46,7 +46,11 @@
     "knowsAbout": [
       "Go", "Java", "C#", "Python", "JavaScript", "Relational Databases",
       "Microservices", "CI/CD", "RESTful Services", "Data Science",
-      "Machine Learning", "Engineering Management", "Agile Methodologies"
+      "Machine Learning", "Engineering Management", "Agile Methodologies",
+      "Agentic AI Systems", "AI Coding Agents", "Model Context Protocol (MCP)",
+      "Agent2Agent Protocol (A2A)", "LLM Evaluation and Benchmarking",
+      "Local LLM Inference (Apple MLX)", "LiteLLM", "Tailscale", "Flutter",
+      "Firebase", "Google Cloud Run", "Docker", "SQLite", "TypeScript"
     ],
     "hasOccupation": [
       {
@@ -196,8 +200,57 @@
       developing enterprise applications using Go, Java, C#, Python, relational
       databases, and JavaScript. Experienced in managing cross-functional teams and
       integrating Data Science / Machine Learning solutions. Strong track record in
-      delivering results through agile methodologies.
+      delivering results through agile methodologies. Over the past six months, has
+      been building and operating agentic AI systems independently — coding-agent
+      harness engineering, local LLM infrastructure, and autonomous research agents
+      (detailed below) — alongside core engineering-management responsibilities.
     </p>
+  </section>
+
+  <section id="agentic-work">
+    <h2>AI &amp; Agentic Engineering — Recent Work (2026)</h2>
+    <p class="summary">
+      Independent, hands-on work over the last ~6 months, run outside of core job
+      responsibilities. Some of the underlying repositories are private (config/
+      infrastructure detail not meant for public release); named here without links
+      for that reason, not omitted.
+    </p>
+    <article class="role">
+      <div class="role-head"><span class="role-title">Coding-agent harness engineering &amp; evaluation</span></div>
+      <ul class="bullets">
+        <li>Hardened and customized the Pi coding-agent harness for daily use: a pinned TypeScript contract test suite, a current-diff quality gate, project-scoped configuration overlays, stack-aware routing, an external-effect guard, symlink-safe path checks, versioned trace records, and a Docker containment profile.</li>
+        <li>Designed and ran controlled agentic-coding benchmarks (Harbor framework, blinded model-based review, replicated trials) comparing agent harnesses — including Claude Code, Codex CLI, Copilot CLI, and Pi — across Go and Flutter/Dart tasks.</li>
+        <li>Diagnosed a decoding-configuration regression (disabled reasoning, undocumented greedy decoding) that flipped a replicated coding-benchmark result from 0/4 to 4/4, and built supporting evaluation tooling (stall detection, wall-clock budget nudging) used in later runs.</li>
+      </ul>
+    </article>
+    <article class="role">
+      <div class="role-head"><span class="role-title">Local LLM infrastructure</span></div>
+      <ul class="bullets">
+        <li>Operated multi-host local LLM inference infrastructure across two hardware generations: an NVIDIA DGX Spark (GB10) two-host cluster running llama-swap behind a LiteLLM proxy with Tailscale remote access, then a consolidated Apple MLX stack on a Mac Studio M3 Ultra serving code-generation, chat, web-search, and speech-to-text models concurrently — with validated rollback procedures for every model swap.</li>
+        <li>Also evaluates OpenClaw, a separate autonomous coding agent, alongside Claude Code and Pi as part of this agent-tooling work.</li>
+      </ul>
+    </article>
+    <article class="role">
+      <div class="role-head"><span class="role-title">Personal multi-agent assistant (Hermes)</span></div>
+      <ul class="bullets">
+        <li>Operates a personal AI assistant built on distinct agent profiles — a coding agent, a research agent, and a Kanban-style orchestrator agent — driven by cron-scheduled prompts, including one that runs an ongoing product-idea research pipeline end to end.</li>
+      </ul>
+    </article>
+    <article class="role">
+      <div class="role-head"><span class="role-title">Cross-platform apps: DayTrix &amp; Personal Budget Simplifier</span></div>
+      <ul class="bullets">
+        <li>Designing, building, and shipping DayTrix from one Flutter codebase to web, iOS, and Android, backed by a Go API. Live on the web now at <a href="https://personal-assistant-kkkbm3cwkq-uc.a.run.app">personal-assistant-kkkbm3cwkq-uc.a.run.app</a> (Google Cloud Run); iOS builds ship via Xcode Cloud → TestFlight. CI/CD to Cloud Run, Firebase backend services, and Playwright end-to-end test coverage.</li>
+        <li>Also built Personal Budget Simplifier, a second Go + Flutter app (macOS, Windows, Linux, Web, iOS) for CSV-based budget tracking with a pure-Go SQLite backend.</li>
+      </ul>
+    </article>
+    <article class="role">
+      <div class="role-head"><span class="role-title">Autonomous research agents</span></div>
+      <ul class="bullets">
+        <li>Operate a nightly automated financial-research pipeline (FinRobot-based) covering 40+ tickers with automated retry/failure handling.</li>
+        <li>Maintain a running daily research log tracking agent-protocol developments — Model Context Protocol (MCP) and Agent2Agent (A2A) — kept continuously since mid-2026.</li>
+        <li>Built an MCP server (Go + Python) exposing a task-management agent.</li>
+      </ul>
+    </article>
   </section>
 
   <section id="experience">
@@ -273,17 +326,19 @@
       <li>RESTful Services</li><li>Data Science</li><li>Machine Learning</li>
       <li>Engineering Management</li><li>Agile Methodologies</li>
     </ul>
+    <p class="summary" style="margin-top:1rem;">Also working with as of 2026, evidenced by the work above:</p>
+    <ul class="skills">
+      <li>Agentic AI Systems</li><li>AI Coding Agents</li>
+      <li>Model Context Protocol (MCP)</li><li>Agent2Agent Protocol (A2A)</li>
+      <li>LLM Evaluation &amp; Benchmarking</li><li>Local LLM Inference (Apple MLX)</li>
+      <li>LiteLLM</li><li>Tailscale</li>
+      <li>Flutter</li><li>Firebase</li><li>Google Cloud Run</li><li>Docker</li>
+      <li>SQLite</li><li>TypeScript</li>
+    </ul>
   </section>
 
   <section id="projects" class="projects">
-    <h2>Beyond the day job</h2>
-    <article>
-      <h3>AI agent tooling</h3>
-      <p>Maintains a private multi-agent configuration toolchain spanning Claude Code,
-      Codex CLI, and Copilot CLI (hooks, skills, prompt templates from one source of
-      truth), and runs structured local-vs-cloud LLM coding benchmarks to evaluate
-      when local inference is actually worth it.</p>
-    </article>
+    <h2>Other public repos</h2>
     <article>
       <h3><a href="https://github.com/ljammula/my-mario-2">my-mario-2</a></h3>
       <p>A Super Mario–style browser game (Vite + TypeScript), deployed on GitHub Pages.</p>
