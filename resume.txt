@@ -78,6 +78,8 @@ PROFESSIONAL EXPERIENCE
 Senior Engineering Manager | Shipt | Dallas, TX (Remote) | Jun 2022 - Present
 - Managing a team of high performing engineers to develop Tier-0 asynchronous
   distributed microservices with baked in instrumentation, monitoring and alerting
+- Collaborated with cross-functional teams to drive efficiency gains in order
+  fulfillment
 - Developed and maintained microservices using Go, Python, PostgreSQL, Docker
 - Mentored and led high-performing cross-functional remote team
 - Recognized for timely initiative delivery
