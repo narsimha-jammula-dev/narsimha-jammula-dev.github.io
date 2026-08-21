@@ -118,8 +118,8 @@ LLM Evaluation & Benchmarking, Local LLM Inference (Apple MLX), LiteLLM,
 Tailscale, Flutter, Firebase, Google Cloud Run, Docker, SQLite, TypeScript
 
 OTHER PUBLIC REPOS
-- my-mario-2 (github.com/ljammula/my-mario-2) - browser game, Vite + TypeScript,
-  deployed on GitHub Pages.
+- my-mario (ljammula.github.io/my-mario) - Super Mario Bros 1985-style browser
+  game, HTML5 Canvas + vanilla JS, live on GitHub Pages.
 - todo-service (github.com/ljammula/todo-service) - service written in Go.
 
 Machine-readable versions: https://narsimha-jammula-dev.github.io/resume.json (JSON Resume),

@@ -117,10 +117,10 @@
       "type": "application"
     },
     {
-      "name": "my-mario-2",
-      "description": "A Super Mario-style browser game (Vite + TypeScript), deployed on GitHub Pages.",
-      "url": "https://github.com/ljammula/my-mario-2",
-      "keywords": ["TypeScript", "Vite"],
+      "name": "my-mario",
+      "description": "A Super Mario Bros 1985-style browser game, HTML5 Canvas + vanilla JS, live on GitHub Pages.",
+      "url": "https://ljammula.github.io/my-mario/",
+      "keywords": ["JavaScript", "HTML5 Canvas"],
       "type": "application"
     },
     {
