@@ -88,10 +88,10 @@ Software Engineering Manager | CareXM | Salt Lake City, UT | Dec 2020 - Jun 2022
 - Managed Full Stack Dev & QA teams delivering Web, Mobile & Desktop applications
 - Led modernizing tech stack by replacing MVC architecture with microservices and
   single page application
-- Setup CI/CD pipeline, ensured successful releases with proper observability &
-  monitoring
-- Pioneered integration test automation, established on-call support & incident
-  alerting
+- Setup CI/CD pipeline, ensured successful releases with proper
+  observability & monitoring
+- Pioneered integration test automation, established
+  on-call support & incident alerting
 - Acknowledged for outstanding project deliveries
 
 Assistant Director | Senior Software Engineer | Data Scientist | Progrexion
