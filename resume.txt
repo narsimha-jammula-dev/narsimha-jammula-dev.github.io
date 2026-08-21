@@ -1,58 +1,53 @@
 LAXMI NARSIMHA REDDY JAMMULA (Narsimha)
-Senior Engineering Manager | Full Stack Developer
+Senior Engineering Manager
 Email: jlnarsimhareddy@gmail.com
 GitHub: https://github.com/ljammula
 LinkedIn: https://www.linkedin.com/in/laxmi-narsimha-reddy-jammula-37486228/
 Site: https://narsimha-jammula-dev.github.io/
 
 SUMMARY
-Dedicated Engineering Leader / Full Stack Developer with 14+ years of experience
-developing enterprise applications using Go, Java, C#, Python, relational databases,
-and JavaScript. Experienced in managing cross-functional teams and integrating Data
-Science/Machine Learning solutions. Strong track record in delivering results through
-agile methodologies. Recent 2026 work has focused on building and operating
-agentic AI systems independently -- coding-agent harness engineering, local LLM
-infrastructure, and autonomous research agents (see below) -- alongside core
-engineering-management responsibilities.
+Engineering leader with 14+ years building enterprise applications in Go, Java,
+C#, Python, and JavaScript -- managing cross-functional teams and integrating
+Data Science/Machine Learning solutions along the way. Alongside core
+engineering-management responsibilities, has spent 2026 building and operating
+agentic AI systems independently: coding-agent harness engineering, local LLM
+infrastructure, and autonomous research agents (see below).
 
 AI & AGENTIC ENGINEERING - RECENT WORK (2026)
-Independent, hands-on work run outside of core job
-responsibilities. Some underlying repositories are private (config/infrastructure
-detail not meant for public release); named here without links for that reason,
-not omitted.
+Independent, hands-on work run outside of core job responsibilities. Some
+underlying repositories are private; described here without links.
 
 Coding-agent harness engineering & evaluation
-- Hardened and customized the Pi coding-agent harness for daily use: a pinned
+- Harden and customize the Pi coding-agent harness for daily use: a pinned
   TypeScript contract test suite, a current-diff quality gate, project-scoped
   configuration overlays, stack-aware routing, an external-effect guard,
   symlink-safe path checks, versioned trace records, and a Docker containment
   profile.
-- Designed and ran controlled agentic-coding benchmarks (Harbor framework, blinded
-  model-based review, replicated trials) comparing agent harnesses -- including
-  Claude Code, Codex CLI, Copilot CLI, and Pi -- across Go and Flutter/Dart tasks.
+- Design and run controlled agentic-coding benchmarks (Harbor framework, blinded
+  model-based review, replicated trials) comparing four agent harnesses --
+  Claude Code, Codex CLI, Copilot CLI, and Pi -- across Go and Flutter/Dart
+  tasks; also evaluates OpenClaw as a fifth.
 - Diagnosed a decoding-configuration regression (disabled reasoning, undocumented
   greedy decoding) that flipped a replicated coding-benchmark result from 0/4 to
   4/4, and built supporting evaluation tooling (stall detection, wall-clock budget
   nudging) used in later runs.
 
 Local LLM infrastructure
-- Operated multi-host local LLM inference infrastructure across two hardware
-  generations: an NVIDIA DGX Spark (GB10) two-host cluster running llama-swap
-  behind a LiteLLM proxy with Tailscale remote access, then a consolidated Apple
-  MLX stack on a Mac Studio M3 Ultra serving code-generation, chat, web-search,
-  and speech-to-text models concurrently, with validated rollback procedures for
-  every model swap.
-- Also evaluates OpenClaw, a separate autonomous coding agent, alongside Claude
-  Code and Pi as part of this agent-tooling work.
+- Operate multi-model local LLM inference serving code-generation, chat,
+  web-search, and speech-to-text concurrently, with validated rollback
+  procedures for every model swap -- across two hardware generations: an
+  NVIDIA DGX Spark (GB10) two-host cluster (llama-swap behind a LiteLLM proxy,
+  Tailscale remote access), then a consolidated Apple MLX stack on a Mac
+  Studio M3 Ultra.
 
 Personal multi-agent assistant (Hermes)
-- Operates a personal AI assistant built on distinct agent profiles -- a coding
+- Operate a personal AI assistant built on distinct agent profiles -- a coding
   agent, a research agent, and a Kanban-style orchestrator agent -- driven by
   cron-scheduled prompts, including one that runs an ongoing product-idea
   research pipeline end to end.
 
 Cross-platform apps: DayTrix & Personal Budget Simplifier
-- Designing, building, and shipping DayTrix from one Flutter codebase to web, iOS,
+- Design, build, and ship DayTrix from one Flutter codebase to web, iOS,
   and Android, backed by a Go API. Live on the web now at
   https://personal-assistant-kkkbm3cwkq-uc.a.run.app (Google Cloud Run); iOS builds
   ship via Xcode Cloud -> TestFlight. CI/CD to Cloud Run, Firebase backend
@@ -66,7 +61,7 @@ Autonomous research agents
   60 tickers and indices with automated retry/failure handling.
 - Maintain a running daily research log tracking agent-protocol developments --
   Model Context Protocol (MCP) and Agent2Agent (A2A) -- kept continuously since
-  mid-2026.
+  July 2026.
 - Built an MCP server (Go + Python) exposing a task-management agent.
 
 EDUCATION
@@ -76,30 +71,29 @@ Jawaharlal Nehru Technological University (JNTU), India
 PROFESSIONAL EXPERIENCE
 
 Senior Engineering Manager | Shipt | Dallas, TX (Remote) | Jun 2022 - Present
-- Managing a team of high performing engineers to develop Tier-0 asynchronous
-  distributed microservices with baked in instrumentation, monitoring and alerting
-- Collaborated with cross-functional teams to drive efficiency gains in order
+- Manage a high-performing, cross-functional remote engineering team building
+  Tier-0 asynchronous distributed microservices with baked-in instrumentation,
+  monitoring, and alerting
+- Collaborate with cross-functional teams to drive efficiency gains in order
   fulfillment
-- Developed and maintained microservices using Go, Python, PostgreSQL, Docker
-- Mentored and led high-performing cross-functional remote team
-- Recognized for timely initiative delivery
+- Develop and maintain microservices using Go, Python, PostgreSQL, Docker
 
 Software Engineering Manager | CareXM | Salt Lake City, UT | Dec 2020 - Jun 2022
 - Managed Full Stack Dev & QA teams delivering Web, Mobile & Desktop applications
 - Led modernizing tech stack by replacing MVC architecture with microservices and
   single page application
-- Setup CI/CD pipeline, ensured successful releases with proper
+- Set up CI/CD pipeline, ensured successful releases with proper
   observability & monitoring
 - Pioneered integration test automation, established
   on-call support & incident alerting
-- Acknowledged for outstanding project deliveries
 
-Assistant Director | Senior Software Engineer | Data Scientist | Progrexion
-Salt Lake City, UT | Sep 2017 - Dec 2020
+Assistant Director, Data Science | Progrexion
+Salt Lake City, UT | Nov 2016 - Dec 2020
+- Progressed over four years from Senior Software Engineer to Data Scientist to
+  Assistant Director, Data Science
 - Managed Data Science, ML, and Software Development teams
 - Led ML model integration into application workflows
 - Developed RESTful services, asynchronous batch processing
-- Mentored and led team, achieved successful results
 
 Senior Application Development Consultant | Goldman Sachs | Salt Lake City, UT
 Apr 2015 - Nov 2016
@@ -112,15 +106,15 @@ Go, Java, C#, Python, JavaScript, Relational Databases, Microservices, CI/CD,
 RESTful Services, Data Science, Machine Learning, Engineering Management,
 Agile Methodologies
 
-Also working with as of 2026, evidenced by the work above: Agentic AI Systems,
-AI Coding Agents, Model Context Protocol (MCP), Agent2Agent Protocol (A2A),
-LLM Evaluation & Benchmarking, Local LLM Inference (Apple MLX), LiteLLM,
-Tailscale, Flutter, Firebase, Google Cloud Run, Docker, SQLite, TypeScript
+Also working with as of 2026, evidenced by the work described in this resume:
+Agentic AI Systems, AI Coding Agents, Model Context Protocol (MCP),
+Agent2Agent Protocol (A2A), LLM Evaluation & Benchmarking,
+Local LLM Inference (Apple MLX), Flutter, Firebase, Google Cloud Run, Docker,
+SQLite, TypeScript
 
 OTHER PUBLIC REPOS
 - my-mario (ljammula.github.io/my-mario) - Super Mario Bros 1985-style browser
   game, HTML5 Canvas + vanilla JS, live on GitHub Pages.
-- todo-service (github.com/ljammula/todo-service) - service written in Go.
 - commit-reminder-app (github.com/ljammula/commit-reminder-app) - web UI microapp
   to track and remind for local git repo commits and pushes.
 

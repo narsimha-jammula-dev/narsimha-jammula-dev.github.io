@@ -1,8 +1,8 @@
 # Laxmi Narsimha Reddy Jammula
 
-> Senior Engineering Manager / Full Stack Developer with 14+ years building
-> enterprise applications (Go, Java, C#, Python, JavaScript) and leading
-> cross-functional engineering teams.
+> Senior Engineering Manager with 14+ years building enterprise applications
+> (Go, Java, C#, Python, JavaScript) and 5+ years leading cross-functional
+> engineering teams since 2020.
 
 This site is a personal resume/profile page. All facts on it are drawn directly
 from the author's own resume — nothing here is intended to influence automated
