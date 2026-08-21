@@ -1,0 +1,104 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json",
+  "basics": {
+    "name": "Laxmi Narsimha Reddy Jammula",
+    "label": "Senior Engineering Manager",
+    "email": "jlnarsimhareddy@gmail.com",
+    "url": "https://narsimha-jammula-dev.github.io/",
+    "summary": "Dedicated Engineering Leader / Full Stack Developer with 14+ years of experience developing enterprise applications using Go, Java, C#, Python, relational databases, and JavaScript. Experienced in managing cross-functional teams and integrating Data Science/Machine Learning solutions. Strong track record in delivering results through agile methodologies.",
+    "location": {
+      "region": "Dallas, TX",
+      "countryCode": "US"
+    },
+    "profiles": [
+      { "network": "GitHub", "username": "ljammula", "url": "https://github.com/ljammula" },
+      { "network": "LinkedIn", "username": "laxmi-narsimha-reddy-jammula-37486228", "url": "https://www.linkedin.com/in/laxmi-narsimha-reddy-jammula-37486228/" }
+    ]
+  },
+  "work": [
+    {
+      "name": "Shipt",
+      "position": "Senior Engineering Manager",
+      "location": "Dallas, TX (Remote)",
+      "startDate": "2022-06-01",
+      "endDate": null,
+      "highlights": [
+        "Managing a team of high performing engineers to develop Tier-0 asynchronous distributed microservices with baked in instrumentation, monitoring and alerting",
+        "Collaborated with cross-functional teams to achieve 20x efficiency gains in order fulfillment",
+        "Developed and maintained microservices using Go, Python, PostgreSQL, Docker",
+        "Mentored and led high-performing cross-functional remote team",
+        "Recognized for timely initiative delivery"
+      ]
+    },
+    {
+      "name": "CareXM",
+      "position": "Software Engineering Manager",
+      "location": "Salt Lake City, UT",
+      "startDate": "2020-12-01",
+      "endDate": "2022-06-01",
+      "highlights": [
+        "Managed Full Stack Dev & QA teams delivering Web, Mobile & Desktop applications",
+        "Led modernizing tech stack by replacing MVC architecture with microservices and single page application",
+        "Setup CI/CD pipeline, ensured successful releases with proper observability & monitoring",
+        "Pioneered integration test automation, established on-call support & incident alerting",
+        "Acknowledged for outstanding project deliveries"
+      ]
+    },
+    {
+      "name": "Progrexion",
+      "position": "Assistant Director | Senior Software Engineer | Data Scientist",
+      "location": "Salt Lake City, UT",
+      "startDate": "2017-09-01",
+      "endDate": "2020-12-01",
+      "highlights": [
+        "Managed Data Science, ML, and Software Development teams",
+        "Led ML model integration into application workflows",
+        "Developed RESTful services, asynchronous batch processing",
+        "Mentored and led team, achieved successful results"
+      ]
+    },
+    {
+      "name": "Goldman Sachs",
+      "position": "Senior Application Development Consultant",
+      "location": "Salt Lake City, UT",
+      "startDate": "2015-04-01",
+      "endDate": "2016-11-01",
+      "highlights": []
+    },
+    {
+      "name": "McDonald's Corporation (IGATE)",
+      "position": "Senior Software Engineer",
+      "location": "Chicago, IL / Pune, India",
+      "startDate": "2011-12-01",
+      "endDate": "2015-04-01",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "Jawaharlal Nehru Technological University (JNTU), India",
+      "studyType": "Bachelor of Technology",
+      "area": "Computer Science and Engineering"
+    }
+  ],
+  "skills": [
+    { "name": "Go" },
+    { "name": "Java" },
+    { "name": "C#" },
+    { "name": "Python" },
+    { "name": "JavaScript" },
+    { "name": "Relational Databases" },
+    { "name": "Microservices" },
+    { "name": "CI/CD" },
+    { "name": "RESTful Services" },
+    { "name": "Data Science" },
+    { "name": "Machine Learning" },
+    { "name": "Engineering Management" },
+    { "name": "Agile Methodologies" }
+  ],
+  "meta": {
+    "canonical": "https://narsimha-jammula-dev.github.io/resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2026-08-20"
+  }
+}

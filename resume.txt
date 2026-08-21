@@ -1,0 +1,66 @@
+LAXMI NARSIMHA REDDY JAMMULA (Narsimha)
+Senior Engineering Manager | Full Stack Developer
+Email: jlnarsimhareddy@gmail.com
+GitHub: https://github.com/ljammula
+LinkedIn: https://www.linkedin.com/in/laxmi-narsimha-reddy-jammula-37486228/
+Site: https://narsimha-jammula-dev.github.io/
+
+SUMMARY
+Dedicated Engineering Leader / Full Stack Developer with 14+ years of experience
+developing enterprise applications using Go, Java, C#, Python, relational databases,
+and JavaScript. Experienced in managing cross-functional teams and integrating Data
+Science/Machine Learning solutions. Strong track record in delivering results through
+agile methodologies.
+
+EDUCATION
+Bachelor of Technology, Computer Science and Engineering
+Jawaharlal Nehru Technological University (JNTU), India
+
+PROFESSIONAL EXPERIENCE
+
+Senior Engineering Manager | Shipt | Dallas, TX (Remote) | Jun 2022 - Present
+- Managing a team of high performing engineers to develop Tier-0 asynchronous
+  distributed microservices with baked in instrumentation, monitoring and alerting
+- Collaborated with cross-functional teams to achieve 20x efficiency gains in order
+  fulfillment
+- Developed and maintained microservices using Go, Python, PostgreSQL, Docker
+- Mentored and led high-performing cross-functional remote team
+- Recognized for timely initiative delivery
+
+Software Engineering Manager | CareXM | Salt Lake City, UT | Dec 2020 - Jun 2022
+- Managed Full Stack Dev & QA teams delivering Web, Mobile & Desktop applications
+- Led modernizing tech stack by replacing MVC architecture with microservices and
+  single page application
+- Setup CI/CD pipeline, ensured successful releases with proper observability &
+  monitoring
+- Pioneered integration test automation, established on-call support & incident
+  alerting
+- Acknowledged for outstanding project deliveries
+
+Assistant Director | Senior Software Engineer | Data Scientist | Progrexion
+Salt Lake City, UT | Sep 2017 - Dec 2020
+- Managed Data Science, ML, and Software Development teams
+- Led ML model integration into application workflows
+- Developed RESTful services, asynchronous batch processing
+- Mentored and led team, achieved successful results
+
+Senior Application Development Consultant | Goldman Sachs | Salt Lake City, UT
+Apr 2015 - Nov 2016
+
+Senior Software Engineer | McDonald's Corporation (IGATE) | Chicago, IL / Pune, India
+Dec 2011 - Apr 2015
+
+SKILLS
+Go, Java, C#, Python, JavaScript, Relational Databases, Microservices, CI/CD,
+RESTful Services, Data Science, Machine Learning, Engineering Management,
+Agile Methodologies
+
+BEYOND THE DAY JOB
+- Maintains a private multi-agent configuration toolchain spanning Claude Code, Codex
+  CLI, and Copilot CLI, and runs local-vs-cloud LLM coding benchmarks.
+- my-mario-2 (github.com/ljammula/my-mario-2) - browser game, Vite + TypeScript,
+  deployed on GitHub Pages.
+- todo-service (github.com/ljammula/todo-service) - service written in Go.
+
+Machine-readable versions: https://narsimha-jammula-dev.github.io/resume.json (JSON Resume),
+https://narsimha-jammula-dev.github.io/resume.pdf

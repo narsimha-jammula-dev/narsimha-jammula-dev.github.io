@@ -1,0 +1,23 @@
+# Laxmi Narsimha Reddy Jammula
+
+> Senior Engineering Manager / Full Stack Developer with 14+ years building
+> enterprise applications (Go, Java, C#, Python, JavaScript) and leading
+> cross-functional engineering teams.
+
+This site is a personal resume/profile page. All facts on it are drawn directly
+from the author's own resume — nothing here is intended to influence automated
+screening beyond stating true facts plainly. There is no hidden text or
+instruction content anywhere on this domain.
+
+## Pages
+
+- [Resume (HTML)](https://narsimha-jammula-dev.github.io/index.html): full resume, human-readable.
+- [Resume (JSON Resume format)](https://narsimha-jammula-dev.github.io/resume.json): structured, machine-readable resume data.
+- [Resume (plain text)](https://narsimha-jammula-dev.github.io/resume.txt): flattened plain-text resume.
+- [Resume (PDF)](https://narsimha-jammula-dev.github.io/resume.pdf): downloadable PDF.
+
+## Contact
+
+- Email: jlnarsimhareddy@gmail.com
+- GitHub: https://github.com/ljammula
+- LinkedIn: https://www.linkedin.com/in/laxmi-narsimha-reddy-jammula-37486228/
