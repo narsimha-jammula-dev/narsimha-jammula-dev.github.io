@@ -5,7 +5,7 @@
     "label": "Senior Engineering Manager",
     "email": "jlnarsimhareddy@gmail.com",
     "url": "https://narsimha-jammula-dev.github.io/",
-    "summary": "Dedicated Engineering Leader / Full Stack Developer with 14+ years of experience developing enterprise applications using Go, Java, C#, Python, relational databases, and JavaScript. Experienced in managing cross-functional teams and integrating Data Science/Machine Learning solutions. Strong track record in delivering results through agile methodologies.",
+    "summary": "Dedicated Engineering Leader / Full Stack Developer with 14+ years of experience developing enterprise applications using Go, Java, C#, Python, relational databases, and JavaScript. Experienced in managing cross-functional teams and integrating Data Science/Machine Learning solutions. Strong track record in delivering results through agile methodologies. Over the past six months, has been building and operating agentic AI systems independently -- coding-agent harness engineering, local LLM infrastructure, and autonomous research agents -- alongside core engineering-management responsibilities.",
     "location": {
       "region": "Dallas, TX",
       "countryCode": "US"
@@ -74,6 +74,63 @@
       "highlights": []
     }
   ],
+  "projects": [
+    {
+      "name": "Coding-agent harness engineering & evaluation",
+      "description": "Hardened and customized the Pi coding-agent harness for daily use (pinned TypeScript contract test suite, current-diff quality gate, project-scoped config overlays, stack-aware routing, external-effect guard, symlink-safe path checks, versioned trace records, Docker containment profile). Designed and ran controlled agentic-coding benchmarks (Harbor framework, blinded model-based review, replicated trials) comparing Claude Code, Codex CLI, Copilot CLI, and Pi across Go and Flutter/Dart tasks. Diagnosed a decoding-configuration regression that flipped a replicated benchmark result from 0/4 to 4/4, and built supporting evaluation tooling (stall detection, wall-clock budget nudging).",
+      "keywords": ["Agentic AI", "AI Coding Agents", "LLM Evaluation", "TypeScript", "Docker"],
+      "roles": ["Sole developer"],
+      "type": "application"
+    },
+    {
+      "name": "Local LLM infrastructure",
+      "description": "Operated multi-host local LLM inference infrastructure across two hardware generations: an NVIDIA DGX Spark (GB10) two-host cluster running llama-swap behind a LiteLLM proxy with Tailscale remote access, then a consolidated Apple MLX stack on a Mac Studio M3 Ultra serving code-generation, chat, web-search, and speech-to-text models concurrently, with validated rollback procedures for every model swap. Also evaluates OpenClaw, a separate autonomous coding agent, alongside Claude Code and Pi.",
+      "keywords": ["Apple MLX", "Local LLM Inference", "LiteLLM", "Tailscale", "Infrastructure"],
+      "roles": ["Sole developer"],
+      "type": "application"
+    },
+    {
+      "name": "Personal multi-agent assistant (Hermes)",
+      "description": "Operates a personal AI assistant built on distinct agent profiles -- a coding agent, a research agent, and a Kanban-style orchestrator agent -- driven by cron-scheduled prompts, including one that runs an ongoing product-idea research pipeline end to end.",
+      "keywords": ["Agentic AI", "Multi-agent Systems", "Automation"],
+      "type": "application"
+    },
+    {
+      "name": "DayTrix",
+      "description": "Cross-platform productivity app (reminders, checklists, notes, habits, mood, routines, daily briefing), one Flutter codebase to web, iOS, and Android, backed by a Go API. Live on the web at https://personal-assistant-kkkbm3cwkq-uc.a.run.app (Google Cloud Run); iOS ships via Xcode Cloud -> TestFlight. CI/CD to Cloud Run, Firebase backend, Playwright end-to-end coverage.",
+      "url": "https://personal-assistant-kkkbm3cwkq-uc.a.run.app",
+      "keywords": ["Flutter", "Go", "Firebase", "Google Cloud Run", "CI/CD", "Playwright"],
+      "type": "application"
+    },
+    {
+      "name": "Personal Budget Simplifier",
+      "description": "A second Go + Flutter cross-platform app (macOS, Windows, Linux, Web, iOS) for CSV-based personal budget tracking, with a pure-Go SQLite backend.",
+      "keywords": ["Flutter", "Go", "SQLite"],
+      "type": "application"
+    },
+    {
+      "name": "Autonomous research agents",
+      "description": "Operate a nightly automated financial-research pipeline (FinRobot-based) covering 40+ tickers with automated retry/failure handling. Maintain a running daily research log tracking Model Context Protocol (MCP) and Agent2Agent (A2A) developments, kept continuously since mid-2026. Built an MCP server (Go + Python) exposing a task-management agent.",
+      "keywords": ["Agentic AI", "MCP", "A2A", "Automation"],
+      "startDate": "2026-07-10",
+      "roles": ["Sole developer"],
+      "type": "application"
+    },
+    {
+      "name": "my-mario-2",
+      "description": "A Super Mario-style browser game (Vite + TypeScript), deployed on GitHub Pages.",
+      "url": "https://github.com/ljammula/my-mario-2",
+      "keywords": ["TypeScript", "Vite"],
+      "type": "application"
+    },
+    {
+      "name": "todo-service",
+      "description": "A small service written in Go.",
+      "url": "https://github.com/ljammula/todo-service",
+      "keywords": ["Go"],
+      "type": "application"
+    }
+  ],
   "education": [
     {
       "institution": "Jawaharlal Nehru Technological University (JNTU), India",
@@ -94,7 +151,21 @@
     { "name": "Data Science" },
     { "name": "Machine Learning" },
     { "name": "Engineering Management" },
-    { "name": "Agile Methodologies" }
+    { "name": "Agile Methodologies" },
+    { "name": "Agentic AI Systems" },
+    { "name": "AI Coding Agents" },
+    { "name": "Model Context Protocol (MCP)" },
+    { "name": "Agent2Agent Protocol (A2A)" },
+    { "name": "LLM Evaluation & Benchmarking" },
+    { "name": "Local LLM Inference (Apple MLX)" },
+    { "name": "LiteLLM" },
+    { "name": "Tailscale" },
+    { "name": "Flutter" },
+    { "name": "Firebase" },
+    { "name": "Google Cloud Run" },
+    { "name": "Docker" },
+    { "name": "SQLite" },
+    { "name": "TypeScript" }
   ],
   "meta": {
     "canonical": "https://narsimha-jammula-dev.github.io/resume.json",
