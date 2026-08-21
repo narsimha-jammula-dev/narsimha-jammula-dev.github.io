@@ -129,6 +129,13 @@
       "url": "https://github.com/ljammula/todo-service",
       "keywords": ["Go"],
       "type": "application"
+    },
+    {
+      "name": "commit-reminder-app",
+      "description": "Web UI microapp to track and remind for local git repo commits and pushes -- scans projects, shows a dashboard, and notifies.",
+      "url": "https://github.com/ljammula/commit-reminder-app",
+      "keywords": ["JavaScript", "HTML"],
+      "type": "application"
     }
   ],
   "education": [
