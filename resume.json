@@ -5,7 +5,7 @@
     "label": "Senior Engineering Manager",
     "email": "jlnarsimhareddy@gmail.com",
     "url": "https://narsimha-jammula-dev.github.io/",
-    "summary": "Dedicated Engineering Leader / Full Stack Developer with 14+ years of experience developing enterprise applications using Go, Java, C#, Python, relational databases, and JavaScript. Experienced in managing cross-functional teams and integrating Data Science/Machine Learning solutions. Strong track record in delivering results through agile methodologies. Recent 2026 work has focused on building and operating agentic AI systems independently -- coding-agent harness engineering, local LLM infrastructure, and autonomous research agents -- alongside core engineering-management responsibilities.",
+    "summary": "Engineering leader with 14+ years building enterprise applications in Go, Java, C#, Python, and JavaScript -- managing cross-functional teams and integrating Data Science/Machine Learning solutions along the way. Alongside core engineering-management responsibilities, has spent 2026 building and operating agentic AI systems independently: coding-agent harness engineering, local LLM infrastructure, and autonomous research agents.",
     "location": {
       "region": "Dallas, TX",
       "countryCode": "US"
@@ -23,11 +23,9 @@
       "startDate": "2022-06-01",
       "endDate": null,
       "highlights": [
-        "Managing a team of high performing engineers to develop Tier-0 asynchronous distributed microservices with baked in instrumentation, monitoring and alerting",
-        "Collaborated with cross-functional teams to drive efficiency gains in order fulfillment",
-        "Developed and maintained microservices using Go, Python, PostgreSQL, Docker",
-        "Mentored and led high-performing cross-functional remote team",
-        "Recognized for timely initiative delivery"
+        "Manage a high-performing, cross-functional remote engineering team building Tier-0 asynchronous distributed microservices with baked-in instrumentation, monitoring, and alerting",
+        "Collaborate with cross-functional teams to drive efficiency gains in order fulfillment",
+        "Develop and maintain microservices using Go, Python, PostgreSQL, Docker"
       ]
     },
     {
@@ -39,22 +37,21 @@
       "highlights": [
         "Managed Full Stack Dev & QA teams delivering Web, Mobile & Desktop applications",
         "Led modernizing tech stack by replacing MVC architecture with microservices and single page application",
-        "Setup CI/CD pipeline, ensured successful releases with proper observability & monitoring",
-        "Pioneered integration test automation, established on-call support & incident alerting",
-        "Acknowledged for outstanding project deliveries"
+        "Set up CI/CD pipeline, ensured successful releases with proper observability & monitoring",
+        "Pioneered integration test automation, established on-call support & incident alerting"
       ]
     },
     {
       "name": "Progrexion",
-      "position": "Assistant Director | Senior Software Engineer | Data Scientist",
+      "position": "Assistant Director, Data Science",
       "location": "Salt Lake City, UT",
-      "startDate": "2017-09-01",
+      "startDate": "2016-11-01",
       "endDate": "2020-12-01",
       "highlights": [
+        "Progressed over four years from Senior Software Engineer to Data Scientist to Assistant Director, Data Science",
         "Managed Data Science, ML, and Software Development teams",
         "Led ML model integration into application workflows",
-        "Developed RESTful services, asynchronous batch processing",
-        "Mentored and led team, achieved successful results"
+        "Developed RESTful services, asynchronous batch processing"
       ]
     },
     {
@@ -77,27 +74,27 @@
   "projects": [
     {
       "name": "Coding-agent harness engineering & evaluation",
-      "description": "Hardened and customized the Pi coding-agent harness for daily use (pinned TypeScript contract test suite, current-diff quality gate, project-scoped config overlays, stack-aware routing, external-effect guard, symlink-safe path checks, versioned trace records, Docker containment profile). Designed and ran controlled agentic-coding benchmarks (Harbor framework, blinded model-based review, replicated trials) comparing Claude Code, Codex CLI, Copilot CLI, and Pi across Go and Flutter/Dart tasks. Diagnosed a decoding-configuration regression that flipped a replicated benchmark result from 0/4 to 4/4, and built supporting evaluation tooling (stall detection, wall-clock budget nudging).",
+      "description": "Harden and customize the Pi coding-agent harness for daily use (pinned TypeScript contract test suite, current-diff quality gate, project-scoped config overlays, stack-aware routing, external-effect guard, symlink-safe path checks, versioned trace records, Docker containment profile). Design and run controlled agentic-coding benchmarks (Harbor framework, blinded model-based review, replicated trials) comparing four agent harnesses -- Claude Code, Codex CLI, Copilot CLI, and Pi -- across Go and Flutter/Dart tasks; also evaluates OpenClaw as a fifth. Diagnosed a decoding-configuration regression that flipped a replicated benchmark result from 0/4 to 4/4, and built supporting evaluation tooling (stall detection, wall-clock budget nudging).",
       "keywords": ["Agentic AI", "AI Coding Agents", "LLM Evaluation", "TypeScript", "Docker"],
       "roles": ["Sole developer"],
       "type": "application"
     },
     {
       "name": "Local LLM infrastructure",
-      "description": "Operated multi-host local LLM inference infrastructure across two hardware generations: an NVIDIA DGX Spark (GB10) two-host cluster running llama-swap behind a LiteLLM proxy with Tailscale remote access, then a consolidated Apple MLX stack on a Mac Studio M3 Ultra serving code-generation, chat, web-search, and speech-to-text models concurrently, with validated rollback procedures for every model swap. Also evaluates OpenClaw, a separate autonomous coding agent, alongside Claude Code and Pi.",
-      "keywords": ["Apple MLX", "Local LLM Inference", "LiteLLM", "Tailscale", "Infrastructure"],
+      "description": "Operate multi-model local LLM inference serving code-generation, chat, web-search, and speech-to-text concurrently, with validated rollback procedures for every model swap -- across two hardware generations: an NVIDIA DGX Spark (GB10) two-host cluster (llama-swap behind a LiteLLM proxy, Tailscale remote access), then a consolidated Apple MLX stack on a Mac Studio M3 Ultra.",
+      "keywords": ["Apple MLX", "Local LLM Inference", "Infrastructure"],
       "roles": ["Sole developer"],
       "type": "application"
     },
     {
       "name": "Personal multi-agent assistant (Hermes)",
-      "description": "Operates a personal AI assistant built on distinct agent profiles -- a coding agent, a research agent, and a Kanban-style orchestrator agent -- driven by cron-scheduled prompts, including one that runs an ongoing product-idea research pipeline end to end.",
+      "description": "Operate a personal AI assistant built on distinct agent profiles -- a coding agent, a research agent, and a Kanban-style orchestrator agent -- driven by cron-scheduled prompts, including one that runs an ongoing product-idea research pipeline end to end.",
       "keywords": ["Agentic AI", "Multi-agent Systems", "Automation"],
       "type": "application"
     },
     {
       "name": "DayTrix",
-      "description": "Cross-platform productivity app (reminders, checklists, notes, habits, mood, routines, daily briefing), one Flutter codebase to web, iOS, and Android, backed by a Go API. Live on the web at https://personal-assistant-kkkbm3cwkq-uc.a.run.app (Google Cloud Run); iOS ships via Xcode Cloud -> TestFlight. CI/CD to Cloud Run, Firebase backend, Playwright end-to-end coverage.",
+      "description": "Design, build, and ship DayTrix, a cross-platform productivity app (reminders, checklists, notes, habits, mood, routines, daily briefing), one Flutter codebase to web, iOS, and Android, backed by a Go API. Live on the web at https://personal-assistant-kkkbm3cwkq-uc.a.run.app (Google Cloud Run); iOS ships via Xcode Cloud -> TestFlight. CI/CD to Cloud Run, Firebase backend, Playwright end-to-end coverage.",
       "url": "https://personal-assistant-kkkbm3cwkq-uc.a.run.app",
       "keywords": ["Flutter", "Go", "Firebase", "Google Cloud Run", "CI/CD", "Playwright"],
       "type": "application"
@@ -110,7 +107,7 @@
     },
     {
       "name": "Autonomous research agents",
-      "description": "Operate a nightly automated financial-research pipeline (FinRobot-based) covering 60 tickers and indices with automated retry/failure handling. Maintain a running daily research log tracking Model Context Protocol (MCP) and Agent2Agent (A2A) developments, kept continuously since mid-2026. Built an MCP server (Go + Python) exposing a task-management agent.",
+      "description": "Operate a nightly automated financial-research pipeline (FinRobot-based) covering 60 tickers and indices with automated retry/failure handling. Maintain a running daily research log tracking Model Context Protocol (MCP) and Agent2Agent (A2A) developments, kept continuously since July 2026. Built an MCP server (Go + Python) exposing a task-management agent.",
       "keywords": ["Agentic AI", "MCP", "A2A", "Automation"],
       "startDate": "2026-07-10",
       "roles": ["Sole developer"],
@@ -121,13 +118,6 @@
       "description": "A Super Mario Bros 1985-style browser game, HTML5 Canvas + vanilla JS, live on GitHub Pages.",
       "url": "https://ljammula.github.io/my-mario/",
       "keywords": ["JavaScript", "HTML5 Canvas"],
-      "type": "application"
-    },
-    {
-      "name": "todo-service",
-      "description": "A small service written in Go.",
-      "url": "https://github.com/ljammula/todo-service",
-      "keywords": ["Go"],
       "type": "application"
     },
     {
@@ -165,8 +155,6 @@
     { "name": "Agent2Agent Protocol (A2A)" },
     { "name": "LLM Evaluation & Benchmarking" },
     { "name": "Local LLM Inference (Apple MLX)" },
-    { "name": "LiteLLM" },
-    { "name": "Tailscale" },
     { "name": "Flutter" },
     { "name": "Firebase" },
     { "name": "Google Cloud Run" },
