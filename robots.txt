@@ -1,0 +1,25 @@
+# This is a personal resume site. All content is public and free to index.
+
+User-agent: *
+Allow: /
+
+# Explicitly welcomed AI/agent crawlers (2026 conventions)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://narsimha-jammula-dev.github.io/sitemap.xml
