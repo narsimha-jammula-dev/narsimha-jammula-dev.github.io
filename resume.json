@@ -114,17 +114,31 @@
       "type": "application"
     },
     {
+      "name": "buildgate",
+      "description": "Unattended agent factory: takes a ticket and a spec, drives a coding agent through a sandboxed build-and-verify loop, and hands a human a reviewable pull request. Merge stays human by design. Go + Temporal, React console, MCP endpoint.",
+      "url": "https://github.com/ljammula/buildgate",
+      "keywords": ["Go", "Temporal", "AI Coding Agents", "Sandboxing", "MCP"],
+      "type": "application"
+    },
+    {
+      "name": "pi-harness",
+      "description": "Extensions, skills and prompts that harden the pi coding agent: contract tests, a diff quality gate, an external-effect guard, Docker containment.",
+      "url": "https://github.com/ljammula/pi-harness",
+      "keywords": ["TypeScript", "AI Coding Agents"],
+      "type": "application"
+    },
+    {
+      "name": "todo-kafka-service",
+      "description": "Go API whose writes flow through Kafka into Postgres, with Redis for caching and idempotency keys; idempotent consumers and redelivery on failure.",
+      "url": "https://github.com/ljammula/todo-kafka-service",
+      "keywords": ["Go", "Kafka", "PostgreSQL", "Redis"],
+      "type": "application"
+    },
+    {
       "name": "my-mario",
       "description": "A Super Mario Bros 1985-style browser game, HTML5 Canvas + vanilla JS, live on GitHub Pages.",
       "url": "https://ljammula.github.io/my-mario/",
       "keywords": ["JavaScript", "HTML5 Canvas"],
-      "type": "application"
-    },
-    {
-      "name": "commit-reminder-app",
-      "description": "Web UI microapp to track and remind for local git repo commits and pushes -- scans projects, shows a dashboard, and notifies.",
-      "url": "https://github.com/ljammula/commit-reminder-app",
-      "keywords": ["JavaScript", "HTML"],
       "type": "application"
     }
   ],

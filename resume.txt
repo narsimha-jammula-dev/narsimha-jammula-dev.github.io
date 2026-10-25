@@ -15,7 +15,7 @@ infrastructure, and autonomous research agents (see below).
 
 AI & AGENTIC ENGINEERING - RECENT WORK (2026)
 Independent, hands-on work run outside of core job responsibilities. Some
-underlying repositories are private; described here without links.
+underlying repositories are private; the public ones are listed under PUBLIC REPOS.
 
 Coding-agent harness engineering & evaluation
 - Harden and customize the Pi coding-agent harness for daily use: a pinned
@@ -112,11 +112,15 @@ Agent2Agent Protocol (A2A), LLM Evaluation & Benchmarking,
 Local LLM Inference (Apple MLX), Flutter, Firebase, Google Cloud Run, Docker,
 SQLite, TypeScript
 
-OTHER PUBLIC REPOS
+PUBLIC REPOS
+- buildgate (github.com/ljammula/buildgate) - unattended agent factory: ticket +
+  spec -> sandboxed build-and-verify loop -> human-reviewed pull request.
+- pi-harness (github.com/ljammula/pi-harness) - extensions, skills and prompts
+  that harden the pi coding agent (contract tests, quality gate, containment).
+- todo-kafka-service (github.com/ljammula/todo-kafka-service) - Go API, Kafka ->
+  Postgres, Redis caching and idempotency keys.
 - my-mario (ljammula.github.io/my-mario) - Super Mario Bros 1985-style browser
   game, HTML5 Canvas + vanilla JS, live on GitHub Pages.
-- commit-reminder-app (github.com/ljammula/commit-reminder-app) - web UI microapp
-  to track and remind for local git repo commits and pushes.
 
 Machine-readable versions: https://narsimha-jammula-dev.github.io/resume.json (JSON Resume),
 https://narsimha-jammula-dev.github.io/resume.pdf
