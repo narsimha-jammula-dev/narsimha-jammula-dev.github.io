@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<!-- Page design. build.py fills the {{...}} placeholders from resume.json;
+     edit resume.json and run `python3 build.py`, never index.html. -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{DESCRIPTION}}">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://narsimha-jammula-dev.github.io/">
+<link rel="alternate" type="application/json" href="/resume.json" title="Machine-readable resume (JSON Resume)">
+
+<!-- Open Graph -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="{{TITLE}}">
+<meta property="og:description" content="{{OG_DESCRIPTION}}">
+<meta property="og:url" content="https://narsimha-jammula-dev.github.io/">
+<meta name="twitter:card" content="summary">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Structured data for machine/agent readers. Everything below mirrors exactly
+     what is rendered in the visible page below — no hidden or injected text. -->
+<script type="application/ld+json">
+{{JSONLD}}
+</script>
+
+<style>
+  :root {
+    --bg: #faf9f6;
+    --panel: #ffffff;
+    --ink: #15181d;
+    --muted: #5b6470;
+    --line: #e3e0d8;
+    --accent: #21463b;
+    --accent-soft: #e7efea;
+    --font-display: "IBM Plex Serif", Georgia, "Times New Roman", serif;
+    --font-body: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14181b;
+      --panel: #191d20;
+      --ink: #e9eae6;
+      --muted: #9aa3a6;
+      --line: #2a2f33;
+      --accent: #6fcf9e;
+      --accent-soft: #16261f;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  main {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 4rem;
+  }
+  a { color: var(--accent); }
+  p a, li a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
+  }
+  p a:hover, li a:hover { border-bottom-color: var(--accent); }
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  /* ---------- Masthead ---------- */
+  header.hero {
+    margin-bottom: 2.25rem;
+    animation: rise 0.5s ease-out both;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    header.hero { animation: none; }
+    .no-print { display: none; }
+    html { font-size: 82%; }
+    @page { margin: 12mm 14mm; }
+    li, .stat, .role-head { break-inside: avoid; }
+    h2, .role-tag, .role-head, .section-note { break-after: avoid; }
+  }
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 0.6rem;
+  }
+  h1 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    letter-spacing: -0.01em;
+    margin: 0 0 0.35rem;
+  }
+  .headline {
+    font-family: var(--font-mono);
+    color: var(--muted);
+    font-size: 0.98rem;
+    margin: 0 0 1rem;
+  }
+  .thesis {
+    max-width: 62ch;
+    font-size: 1.08rem;
+    margin: 0 0 1.25rem;
+  }
+  .contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.1rem;
+    font-family: var(--font-mono);
+    font-size: 0.88rem;
+    margin: 0 0 1.5rem;
+  }
+  .contact-links a { border-bottom-color: transparent; }
+  .contact-links a:hover { border-bottom-color: var(--accent); }
+
+  /* ---------- Verdict strip (signature element) ---------- */
+  .verdict-strip {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .stat {
+    background: var(--panel);
+    padding: 0.9rem 1rem;
+    transition: transform 0.15s ease, background 0.15s ease;
+  }
+  .stat:hover { transform: translateY(-2px); background: var(--accent-soft); }
+  .stat .value {
+    display: block;
+    font-family: var(--font-mono);
+    font-weight: 500;
+    font-size: 1.15rem;
+    color: var(--accent);
+    white-space: nowrap;
+  }
+  .stat .label {
+    display: block;
+    font-size: 0.76rem;
+    color: var(--muted);
+    margin-top: 0.2rem;
+    letter-spacing: 0.02em;
+  }
+
+  /* ---------- Layout: main column + rail ---------- */
+  .layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-top: 2.75rem;
+  }
+  @media (min-width: 960px) {
+    .layout { grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); }
+  }
+  .col-rail section:first-child { margin-top: 0; }
+
+  section { margin-top: 2.5rem; }
+  section:first-child { margin-top: 0; }
+  h2 {
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink);
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 0.5rem;
+    margin: 0 0 1.1rem;
+  }
+  .section-note {
+    font-size: 0.92rem;
+    color: var(--muted);
+    margin: -0.4rem 0 1.2rem;
+  }
+
+  article.role { margin-bottom: 1.7rem; }
+  article.role:last-child { margin-bottom: 0; }
+  .role-head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.3rem 1rem;
+    margin-bottom: 0.15rem;
+  }
+  .role-title { font-weight: 600; }
+  .role-org { color: var(--accent); font-weight: 600; }
+  .role-tag {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  .role-meta {
+    color: var(--muted);
+    font-family: var(--font-mono);
+    font-size: 0.82rem;
+    white-space: nowrap;
+  }
+  ul.bullets { margin: 0.5rem 0 0; padding-left: 1.2rem; }
+  ul.bullets li { margin-bottom: 0.3rem; }
+
+  .skills { display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 0; margin: 0; list-style: none; }
+  .skills li {
+    font-family: var(--font-mono);
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 0.28rem 0.6rem;
+    font-size: 0.8rem;
+  }
+  .skills.secondary li { color: var(--muted); }
+
+  .projects article { margin-bottom: 1.1rem; }
+  .projects h3 { font-size: 0.98rem; margin: 0 0 0.2rem; font-weight: 600; }
+  .projects p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--line);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  footer p { margin: 0.4rem 0; }
+  footer a { border-bottom-color: color-mix(in srgb, var(--muted) 40%, transparent); color: var(--muted); }
+  footer a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+  @media print {
+    body { background: #fff; color: #000; }
+    .layout { grid-template-columns: 1fr; gap: 1.4rem; }
+    p a, li a, footer a { color: #000; border-bottom: 1px solid #000; }
+    .stat:hover { transform: none; background: var(--panel); }
+    header.hero { animation: none; }
+    .no-print { display: none; }
+    html { font-size: 82%; }
+    @page { margin: 12mm 14mm; }
+    li, .stat, .role-head { break-inside: avoid; }
+    h2, .role-tag, .role-head, .section-note { break-after: avoid; }
+  }
+</style>
+</head>
+<body>
+<main>
+{{BODY}}
+</main>
+</body>
+</html>

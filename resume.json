@@ -2,10 +2,10 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json",
   "basics": {
     "name": "Laxmi Narsimha Reddy Jammula",
-    "label": "Senior Engineering Manager",
+    "label": "Hands-on Architect & Engineering Leader",
     "email": "jlnarsimhareddy@gmail.com",
     "url": "https://narsimha-jammula-dev.github.io/",
-    "summary": "Engineering leader with 14+ years building enterprise applications in Go, Java, C#, Python, and JavaScript -- managing cross-functional teams and integrating Data Science/Machine Learning solutions along the way. Alongside core engineering-management responsibilities, has spent 2026 building and operating agentic AI systems independently: coding-agent harness engineering, local LLM infrastructure, and autonomous research agents.",
+    "summary": "Hands-on architect and engineering leader with 14+ years building enterprise systems in Go, Java, C#, Python, and JavaScript: 8+ years as an engineer and data scientist shipping ML models into production, then 5+ years leading engineering teams while owning the architecture decisions — data stores, event-driven systems on Kafka, API contracts, production incident response. In 2026, building and running agentic AI systems: buildgate, an open-source agent factory with a permanent human merge gate, plus coding-agent harness hardening, benchmarks, and local LLM infrastructure.",
     "location": {
       "region": "Dallas, TX",
       "countryCode": "US"
@@ -13,6 +13,15 @@
     "profiles": [
       { "network": "GitHub", "username": "ljammula", "url": "https://github.com/ljammula" },
       { "network": "LinkedIn", "username": "laxmi-narsimha-reddy-jammula-37486228", "url": "https://www.linkedin.com/in/laxmi-narsimha-reddy-jammula-37486228/" }
+    ],
+    "x-alternateName": "Narsimha",
+    "x-eyebrow": "Resume · Dallas–Fort Worth, TX (Remote)",
+    "x-headline": "Hands-on architect & engineering leader · goes by \"Narsimha\"",
+    "x-thesis": "14+ years building production software — 8+ hands-on as an engineer and data scientist, then 5+ leading teams while staying in the architecture and the code. Now building the coding-agent systems that do the shipping, and measuring whether they work.",
+    "x-stats": [
+      { "value": "14+ yrs", "label": "software engineering, 8+ of them hands-on before managing" },
+      { "value": "8–11", "label": "engineers led, owning 10–12 Tier-0 services" },
+      { "value": "4", "label": "agent harnesses benchmarked head-to-head" }
     ]
   },
   "work": [
@@ -21,11 +30,12 @@
       "position": "Senior Engineering Manager",
       "location": "Dallas, TX (Remote)",
       "startDate": "2022-06-01",
-      "endDate": null,
       "highlights": [
-        "Manage a high-performing, cross-functional remote engineering team building Tier-0 asynchronous distributed microservices with baked-in instrumentation, monitoring, and alerting",
-        "Collaborate with cross-functional teams to drive efficiency gains in order fulfillment",
-        "Develop and maintain microservices using Go, Python, PostgreSQL, Docker"
+        "Lead a team of 8–11 engineers owning 10–12 Tier-0 asynchronous microservices for shopper efficiency and order fulfillment, with instrumentation, monitoring, and alerting built in",
+        "Hands-on architect for the team's services: data-store choices (PostgreSQL as system of record, Redis for caching and idempotency), Kafka event payloads, and API contracts between services",
+        "Lead production incident mitigation on Tier-0 services and the follow-up fixes that stop a recurrence; resolve design conflicts across teams",
+        "Set the team's direction on agentic architecture and AI coding tools and frameworks",
+        "Develop and maintain microservices in Go and Python on PostgreSQL, Redis, Kafka, and Docker"
       ]
     },
     {
@@ -35,8 +45,8 @@
       "startDate": "2020-12-01",
       "endDate": "2022-06-01",
       "highlights": [
-        "Managed Full Stack Dev & QA teams delivering Web, Mobile & Desktop applications",
-        "Led modernizing tech stack by replacing MVC architecture with microservices and single page application",
+        "Managed full-stack development and QA teams, onsite and offshore, delivering web, mobile (Xamarin), and desktop applications",
+        "Architected and led the migration of a .NET Framework MVC application to microservices and a single-page app on Azure",
         "Set up CI/CD pipeline, ensured successful releases with proper observability & monitoring",
         "Pioneered integration test automation, established on-call support & incident alerting"
       ]
@@ -45,101 +55,157 @@
       "name": "Progrexion",
       "position": "Assistant Director, Data Science",
       "location": "Salt Lake City, UT",
-      "startDate": "2016-11-01",
+      "startDate": "2020-03-01",
       "endDate": "2020-12-01",
       "highlights": [
-        "Progressed over four years from Senior Software Engineer to Data Scientist to Assistant Director, Data Science",
-        "Managed Data Science, ML, and Software Development teams",
-        "Led ML model integration into application workflows",
-        "Developed RESTful services, asynchronous batch processing"
+        "Managed Data Science, ML, and Software Development teams"
       ]
     },
     {
-      "name": "Goldman Sachs",
+      "name": "Progrexion",
+      "position": "Lead Data Scientist / Senior Software Engineer",
+      "location": "Salt Lake City, UT",
+      "startDate": "2018-03-01",
+      "endDate": "2020-03-01",
+      "highlights": [
+        "Led ML model integration into application workflows, serving models behind RESTful services"
+      ]
+    },
+    {
+      "name": "Progrexion",
+      "position": "Data Scientist / Senior Software Engineer",
+      "location": "Salt Lake City, UT",
+      "startDate": "2017-08-01",
+      "endDate": "2018-03-01",
+      "highlights": [
+        "Built ML models and the RESTful services and asynchronous batch processing around them"
+      ]
+    },
+    {
+      "name": "Progrexion",
+      "position": "Senior Java Software Engineer",
+      "location": "Salt Lake City, UT",
+      "startDate": "2016-10-01",
+      "endDate": "2017-08-01",
+      "highlights": [
+        "Built backend Java services"
+      ]
+    },
+    {
+      "name": "Goldman Sachs (via NTT DATA)",
       "position": "Senior Application Development Consultant",
       "location": "Salt Lake City, UT",
       "startDate": "2015-04-01",
-      "endDate": "2016-11-01",
-      "highlights": []
+      "endDate": "2016-10-01",
+      "highlights": [
+        "Client-facing consultant embedded with Goldman Sachs engineering"
+      ]
     },
     {
       "name": "McDonald's Corporation (IGATE)",
       "position": "Senior Software Engineer",
       "location": "Chicago, IL / Pune, India",
-      "startDate": "2011-12-01",
+      "startDate": "2011-11-01",
       "endDate": "2015-04-01",
-      "highlights": []
+      "highlights": [
+        "Designed and built Java RESTful services, from requirements gathering with business users through production release",
+        "Owned code reviews, testing (JUnit, Mockito), and UAT support"
+      ]
     }
   ],
   "projects": [
     {
+      "name": "buildgate",
+      "description": "Open-source agent factory: ticket and spec in, sandboxed build-and-verify loop, human-reviewed pull request out.",
+      "highlights": [
+        "Built buildgate, an open-source agent factory: a ticket and a spec go in, a coding agent works through a sandboxed build-and-verify loop, and a human gets a reviewable pull request. Merge and deploy stay human by design.",
+        "Go orchestration on Temporal, a sandbox runtime with per-run network egress control and a spend meter, a React operator console, and an MCP endpoint for agents.",
+        "A written safety contract whose invariants each map to the test that enforces them; measured by how many real tickets reach an accepted pull request with no human intervention, on Go, Python, Java, Ruby, and React Native repositories."
+      ],
+      "url": "https://github.com/ljammula/buildgate",
+      "keywords": ["Go", "Temporal", "AI Coding Agents", "Sandboxing", "MCP"],
+      "roles": ["Sole developer"],
+      "type": "application",
+      "x-section": "Agent platform",
+      "x-repo": { "name": "buildgate", "url": "https://github.com/ljammula/buildgate", "summary": "Unattended agent factory: takes a ticket and a spec, drives a coding agent through a sandboxed build-and-verify loop, and hands a human a reviewable pull request. Merge stays human by design. Go + Temporal, React console, MCP endpoint." }
+    },
+    {
       "name": "Coding-agent harness engineering & evaluation",
-      "description": "Harden and customize the Pi coding-agent harness for daily use (pinned TypeScript contract test suite, current-diff quality gate, project-scoped config overlays, stack-aware routing, external-effect guard, symlink-safe path checks, versioned trace records, Docker containment profile). Design and run controlled agentic-coding benchmarks (Harbor framework, blinded model-based review, replicated trials) comparing four agent harnesses -- Claude Code, Codex CLI, Copilot CLI, and Pi -- across Go and Flutter/Dart tasks; also evaluates OpenClaw as a fifth. Diagnosed a decoding-configuration regression that flipped a replicated benchmark result from 0/4 to 4/4, and built supporting evaluation tooling (stall detection, wall-clock budget nudging).",
+      "description": "Harness hardening for the pi coding agent, and controlled benchmarks of four agent harnesses.",
+      "highlights": [
+        "Harden and customize the Pi coding-agent harness for daily use: a pinned TypeScript contract test suite, a current-diff quality gate, project-scoped configuration overlays, stack-aware routing, an external-effect guard, symlink-safe path checks, versioned trace records, and a Docker containment profile.",
+        "Design and run controlled agentic-coding benchmarks (Harbor framework, blinded model-based review, replicated trials) comparing four agent harnesses — Claude Code, Codex CLI, Copilot CLI, and Pi — across Go and Flutter/Dart tasks; also evaluates OpenClaw as a fifth.",
+        "Diagnosed a decoding-configuration regression (disabled reasoning, undocumented greedy decoding) that flipped a replicated coding-benchmark result from 0/4 to 4/4, and built supporting evaluation tooling (stall detection, wall-clock budget nudging) used in later runs."
+      ],
+      "url": "https://github.com/ljammula/pi-harness",
       "keywords": ["Agentic AI", "AI Coding Agents", "LLM Evaluation", "TypeScript", "Docker"],
       "roles": ["Sole developer"],
-      "type": "application"
+      "type": "application",
+      "x-section": "Harness engineering & evaluation",
+      "x-repo": { "name": "pi-harness", "url": "https://github.com/ljammula/pi-harness", "summary": "Extensions, skills and prompts that harden the pi coding agent: contract tests, a diff quality gate, an external-effect guard, Docker containment." }
     },
     {
       "name": "Local LLM infrastructure",
-      "description": "Operate multi-model local LLM inference serving code-generation, chat, web-search, and speech-to-text concurrently, with validated rollback procedures for every model swap -- across two hardware generations: an NVIDIA DGX Spark (GB10) two-host cluster (llama-swap behind a LiteLLM proxy, Tailscale remote access), then a consolidated Apple MLX stack on a Mac Studio M3 Ultra.",
+      "description": "Multi-model local LLM inference across two hardware generations.",
+      "highlights": [
+        "Operate multi-model local LLM inference serving code-generation, chat, web-search, and speech-to-text concurrently, with validated rollback procedures for every model swap — across two hardware generations: an NVIDIA DGX Spark (GB10) two-host cluster (llama-swap behind a LiteLLM proxy, Tailscale remote access), then a consolidated Apple MLX stack on a Mac Studio M3 Ultra."
+      ],
       "keywords": ["Apple MLX", "Local LLM Inference", "Infrastructure"],
       "roles": ["Sole developer"],
-      "type": "application"
+      "type": "application",
+      "x-section": "Infrastructure"
     },
     {
       "name": "Personal multi-agent assistant (Hermes)",
-      "description": "Operate a personal AI assistant built on distinct agent profiles -- a coding agent, a research agent, and a Kanban-style orchestrator agent -- driven by cron-scheduled prompts, including one that runs an ongoing product-idea research pipeline end to end.",
+      "description": "A personal AI assistant built on distinct agent profiles, driven by scheduled prompts.",
+      "highlights": [
+        "Operate a personal AI assistant built on distinct agent profiles — a coding agent, a research agent, and a Kanban-style orchestrator agent — driven by cron-scheduled prompts, including one that runs an ongoing product-idea research pipeline end to end."
+      ],
       "keywords": ["Agentic AI", "Multi-agent Systems", "Automation"],
-      "type": "application"
+      "type": "application",
+      "x-section": "Multi-agent systems"
     },
     {
-      "name": "DayTrix",
-      "description": "Design, build, and ship DayTrix, a cross-platform productivity app (reminders, checklists, notes, habits, mood, routines, daily briefing), one Flutter codebase to web, iOS, and Android, backed by a Go API. Live on the web at https://personal-assistant-kkkbm3cwkq-uc.a.run.app (Google Cloud Run); iOS ships via Xcode Cloud -> TestFlight. CI/CD to Cloud Run, Firebase backend, Playwright end-to-end coverage.",
+      "name": "DayTrix & Personal Budget Simplifier",
+      "description": "Two cross-platform Go + Flutter apps; DayTrix is live on Google Cloud Run.",
+      "highlights": [
+        "Design, build, and ship DayTrix from one Flutter codebase to web, iOS, and Android, backed by a Go API. Live on the web now at https://personal-assistant-kkkbm3cwkq-uc.a.run.app (Google Cloud Run); iOS builds ship via Xcode Cloud → TestFlight. CI/CD to Cloud Run, Firebase backend services, and Playwright end-to-end test coverage.",
+        "Also built Personal Budget Simplifier, a second Go + Flutter app (macOS, Windows, Linux, Web, iOS) for CSV-based budget tracking with a pure-Go SQLite backend."
+      ],
       "url": "https://personal-assistant-kkkbm3cwkq-uc.a.run.app",
-      "keywords": ["Flutter", "Go", "Firebase", "Google Cloud Run", "CI/CD", "Playwright"],
-      "type": "application"
-    },
-    {
-      "name": "Personal Budget Simplifier",
-      "description": "A second Go + Flutter cross-platform app (macOS, Windows, Linux, Web, iOS) for CSV-based personal budget tracking, with a pure-Go SQLite backend.",
-      "keywords": ["Flutter", "Go", "SQLite"],
-      "type": "application"
+      "keywords": ["Flutter", "Go", "Firebase", "Google Cloud Run", "CI/CD", "Playwright", "SQLite"],
+      "type": "application",
+      "x-section": "Cross-platform product"
     },
     {
       "name": "Autonomous research agents",
-      "description": "Operate a nightly automated financial-research pipeline (FinRobot-based) covering 60 tickers and indices with automated retry/failure handling. Maintain a running daily research log tracking Model Context Protocol (MCP) and Agent2Agent (A2A) developments, kept continuously since July 2026. Built an MCP server (Go + Python) exposing a task-management agent.",
-      "keywords": ["Agentic AI", "MCP", "A2A", "Automation"],
+      "description": "A nightly financial-research pipeline and a daily agent-protocol research log.",
+      "highlights": [
+        "Operate a nightly automated financial-research pipeline (FinRobot-based) covering 60 tickers and indices with automated retry/failure handling.",
+        "Maintain a running daily research log tracking agent-protocol developments — Model Context Protocol (MCP) and Agent2Agent (A2A) — kept continuously since July 2026.",
+        "Built an MCP server (Go + Python) exposing a task-management agent."
+      ],
       "startDate": "2026-07-10",
+      "keywords": ["Agentic AI", "MCP", "A2A", "Automation"],
       "roles": ["Sole developer"],
-      "type": "application"
-    },
-    {
-      "name": "buildgate",
-      "description": "Unattended agent factory: takes a ticket and a spec, drives a coding agent through a sandboxed build-and-verify loop, and hands a human a reviewable pull request. Merge stays human by design. Go + Temporal, React console, MCP endpoint.",
-      "url": "https://github.com/ljammula/buildgate",
-      "keywords": ["Go", "Temporal", "AI Coding Agents", "Sandboxing", "MCP"],
-      "type": "application"
-    },
-    {
-      "name": "pi-harness",
-      "description": "Extensions, skills and prompts that harden the pi coding agent: contract tests, a diff quality gate, an external-effect guard, Docker containment.",
-      "url": "https://github.com/ljammula/pi-harness",
-      "keywords": ["TypeScript", "AI Coding Agents"],
-      "type": "application"
+      "type": "application",
+      "x-section": "Automation"
     },
     {
       "name": "todo-kafka-service",
       "description": "Go API whose writes flow through Kafka into Postgres, with Redis for caching and idempotency keys; idempotent consumers and redelivery on failure.",
       "url": "https://github.com/ljammula/todo-kafka-service",
       "keywords": ["Go", "Kafka", "PostgreSQL", "Redis"],
-      "type": "application"
+      "type": "application",
+      "x-repo": { "name": "todo-kafka-service", "url": "https://github.com/ljammula/todo-kafka-service", "summary": "Go API whose writes flow through Kafka into Postgres, with Redis for caching and idempotency keys; idempotent consumers and redelivery on failure." }
     },
     {
       "name": "my-mario",
       "description": "A Super Mario Bros 1985-style browser game, HTML5 Canvas + vanilla JS, live on GitHub Pages.",
       "url": "https://ljammula.github.io/my-mario/",
       "keywords": ["JavaScript", "HTML5 Canvas"],
-      "type": "application"
+      "type": "application",
+      "x-repo": { "name": "my-mario", "url": "https://github.com/ljammula/my-mario", "summary": "A Super Mario–style browser game, live on GitHub Pages at https://ljammula.github.io/my-mario/." }
     }
   ],
   "education": [
@@ -150,35 +216,18 @@
     }
   ],
   "skills": [
-    { "name": "Go" },
-    { "name": "Java" },
-    { "name": "C#" },
-    { "name": "Python" },
-    { "name": "JavaScript" },
-    { "name": "Relational Databases" },
-    { "name": "Microservices" },
-    { "name": "CI/CD" },
-    { "name": "RESTful Services" },
-    { "name": "Data Science" },
-    { "name": "Machine Learning" },
-    { "name": "Engineering Management" },
-    { "name": "Agile Methodologies" },
-    { "name": "Agentic AI Systems" },
-    { "name": "AI Coding Agents" },
-    { "name": "Model Context Protocol (MCP)" },
-    { "name": "Agent2Agent Protocol (A2A)" },
-    { "name": "LLM Evaluation & Benchmarking" },
-    { "name": "Local LLM Inference (Apple MLX)" },
-    { "name": "Flutter" },
-    { "name": "Firebase" },
-    { "name": "Google Cloud Run" },
-    { "name": "Docker" },
-    { "name": "SQLite" },
-    { "name": "TypeScript" }
+    {
+      "name": "Core",
+      "keywords": ["Software Architecture", "Distributed Systems", "Go", "Python", "Java", "C#", "JavaScript", "PostgreSQL", "Redis", "Apache Kafka", "Microservices", "RESTful APIs", "CI/CD", "Machine Learning", "Data Science", "Engineering Leadership"]
+    },
+    {
+      "name": "Also working with as of 2026",
+      "keywords": ["Agentic AI Systems", "AI Coding Agents", "Model Context Protocol (MCP)", "Agent2Agent Protocol (A2A)", "LLM Evaluation & Benchmarking", "Temporal", "Local LLM Inference (Apple MLX)", "Docker", "TypeScript", "Flutter", "Firebase", "Google Cloud Run"]
+    }
   ],
   "meta": {
     "canonical": "https://narsimha-jammula-dev.github.io/resume.json",
-    "version": "v1.0.0",
-    "lastModified": "2026-08-20"
+    "version": "v2.0.0",
+    "lastModified": "2026-10-25"
   }
 }

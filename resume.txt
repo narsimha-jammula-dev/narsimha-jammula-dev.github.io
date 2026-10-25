@@ -1,23 +1,37 @@
 LAXMI NARSIMHA REDDY JAMMULA (Narsimha)
-Senior Engineering Manager
+Hands-on Architect & Engineering Leader
 Email: jlnarsimhareddy@gmail.com
 GitHub: https://github.com/ljammula
 LinkedIn: https://www.linkedin.com/in/laxmi-narsimha-reddy-jammula-37486228/
 Site: https://narsimha-jammula-dev.github.io/
 
 SUMMARY
-Engineering leader with 14+ years building enterprise applications in Go, Java,
-C#, Python, and JavaScript -- managing cross-functional teams and integrating
-Data Science/Machine Learning solutions along the way. Alongside core
-engineering-management responsibilities, has spent 2026 building and operating
-agentic AI systems independently: coding-agent harness engineering, local LLM
-infrastructure, and autonomous research agents (see below).
+Hands-on architect and engineering leader with 14+ years building enterprise
+systems in Go, Java, C#, Python, and JavaScript: 8+ years as an engineer and
+data scientist shipping ML models into production, then 5+ years leading
+engineering teams while owning the architecture decisions -- data stores,
+event-driven systems on Kafka, API contracts, production incident response. In
+2026, building and running agentic AI systems: buildgate, an open-source agent
+factory with a permanent human merge gate, plus coding-agent harness hardening,
+benchmarks, and local LLM infrastructure.
 
 AI & AGENTIC ENGINEERING - RECENT WORK (2026)
 Independent, hands-on work run outside of core job responsibilities. Some
-underlying repositories are private; the public ones are listed under PUBLIC REPOS.
+underlying repositories are private; the public ones are listed under PUBLIC
+REPOS.
 
-Coding-agent harness engineering & evaluation
+buildgate (https://github.com/ljammula/buildgate)
+- Built buildgate, an open-source agent factory: a ticket and a spec go in, a
+  coding agent works through a sandboxed build-and-verify loop, and a human gets
+  a reviewable pull request. Merge and deploy stay human by design.
+- Go orchestration on Temporal, a sandbox runtime with per-run network egress
+  control and a spend meter, a React operator console, and an MCP endpoint for
+  agents.
+- A written safety contract whose invariants each map to the test that enforces
+  them; measured by how many real tickets reach an accepted pull request with no
+  human intervention, on Go, Python, Java, Ruby, and React Native repositories.
+
+Coding-agent harness engineering & evaluation (https://github.com/ljammula/pi-harness)
 - Harden and customize the Pi coding-agent harness for daily use: a pinned
   TypeScript contract test suite, a current-diff quality gate, project-scoped
   configuration overlays, stack-aware routing, an external-effect guard,
@@ -27,18 +41,18 @@ Coding-agent harness engineering & evaluation
   model-based review, replicated trials) comparing four agent harnesses --
   Claude Code, Codex CLI, Copilot CLI, and Pi -- across Go and Flutter/Dart
   tasks; also evaluates OpenClaw as a fifth.
-- Diagnosed a decoding-configuration regression (disabled reasoning, undocumented
-  greedy decoding) that flipped a replicated coding-benchmark result from 0/4 to
-  4/4, and built supporting evaluation tooling (stall detection, wall-clock budget
-  nudging) used in later runs.
+- Diagnosed a decoding-configuration regression (disabled reasoning,
+  undocumented greedy decoding) that flipped a replicated coding-benchmark
+  result from 0/4 to 4/4, and built supporting evaluation tooling (stall
+  detection, wall-clock budget nudging) used in later runs.
 
 Local LLM infrastructure
 - Operate multi-model local LLM inference serving code-generation, chat,
   web-search, and speech-to-text concurrently, with validated rollback
-  procedures for every model swap -- across two hardware generations: an
-  NVIDIA DGX Spark (GB10) two-host cluster (llama-swap behind a LiteLLM proxy,
-  Tailscale remote access), then a consolidated Apple MLX stack on a Mac
-  Studio M3 Ultra.
+  procedures for every model swap -- across two hardware generations: an NVIDIA
+  DGX Spark (GB10) two-host cluster (llama-swap behind a LiteLLM proxy,
+  Tailscale remote access), then a consolidated Apple MLX stack on a Mac Studio
+  M3 Ultra.
 
 Personal multi-agent assistant (Hermes)
 - Operate a personal AI assistant built on distinct agent profiles -- a coding
@@ -46,81 +60,97 @@ Personal multi-agent assistant (Hermes)
   cron-scheduled prompts, including one that runs an ongoing product-idea
   research pipeline end to end.
 
-Cross-platform apps: DayTrix & Personal Budget Simplifier
-- Design, build, and ship DayTrix from one Flutter codebase to web, iOS,
-  and Android, backed by a Go API. Live on the web now at
-  https://personal-assistant-kkkbm3cwkq-uc.a.run.app (Google Cloud Run); iOS builds
-  ship via Xcode Cloud -> TestFlight. CI/CD to Cloud Run, Firebase backend
-  services, and Playwright end-to-end test coverage.
+DayTrix & Personal Budget Simplifier
+- Design, build, and ship DayTrix from one Flutter codebase to web, iOS, and
+  Android, backed by a Go API. Live on the web now at
+  https://personal-assistant-kkkbm3cwkq-uc.a.run.app (Google Cloud Run); iOS
+  builds ship via Xcode Cloud -> TestFlight. CI/CD to Cloud Run, Firebase
+  backend services, and Playwright end-to-end test coverage.
 - Also built Personal Budget Simplifier, a second Go + Flutter app (macOS,
   Windows, Linux, Web, iOS) for CSV-based budget tracking with a pure-Go SQLite
   backend.
 
 Autonomous research agents
-- Operate a nightly automated financial-research pipeline (FinRobot-based) covering
-  60 tickers and indices with automated retry/failure handling.
+- Operate a nightly automated financial-research pipeline (FinRobot-based)
+  covering 60 tickers and indices with automated retry/failure handling.
 - Maintain a running daily research log tracking agent-protocol developments --
   Model Context Protocol (MCP) and Agent2Agent (A2A) -- kept continuously since
   July 2026.
 - Built an MCP server (Go + Python) exposing a task-management agent.
 
+PROFESSIONAL EXPERIENCE
+
+Senior Engineering Manager | Shipt | Dallas, TX (Remote) | Jun 2022-Present
+- Lead a team of 8-11 engineers owning 10-12 Tier-0 asynchronous microservices
+  for shopper efficiency and order fulfillment, with instrumentation,
+  monitoring, and alerting built in
+- Hands-on architect for the team's services: data-store choices (PostgreSQL as
+  system of record, Redis for caching and idempotency), Kafka event payloads,
+  and API contracts between services
+- Lead production incident mitigation on Tier-0 services and the follow-up fixes
+  that stop a recurrence; resolve design conflicts across teams
+- Set the team's direction on agentic architecture and AI coding tools and
+  frameworks
+- Develop and maintain microservices in Go and Python on PostgreSQL, Redis,
+  Kafka, and Docker
+
+Software Engineering Manager | CareXM | Salt Lake City, UT | Dec 2020-Jun 2022
+- Managed full-stack development and QA teams, onsite and offshore, delivering
+  web, mobile (Xamarin), and desktop applications
+- Architected and led the migration of a .NET Framework MVC application to
+  microservices and a single-page app on Azure
+- Set up CI/CD pipeline, ensured successful releases with proper observability &
+  monitoring
+- Pioneered integration test automation, established on-call support & incident
+  alerting
+
+Assistant Director, Data Science | Progrexion | Salt Lake City, UT | Mar 2020-Dec 2020
+- Managed Data Science, ML, and Software Development teams
+
+Lead Data Scientist / Senior Software Engineer | Progrexion | Salt Lake City, UT | Mar 2018-Mar 2020
+- Led ML model integration into application workflows, serving models behind
+  RESTful services
+
+Data Scientist / Senior Software Engineer | Progrexion | Salt Lake City, UT | Aug 2017-Mar 2018
+- Built ML models and the RESTful services and asynchronous batch processing
+  around them
+
+Senior Java Software Engineer | Progrexion | Salt Lake City, UT | Oct 2016-Aug 2017
+- Built backend Java services
+
+Senior Application Development Consultant | Goldman Sachs (via NTT DATA) | Salt Lake City, UT | Apr 2015-Oct 2016
+- Client-facing consultant embedded with Goldman Sachs engineering
+
+Senior Software Engineer | McDonald's Corporation (IGATE) | Chicago, IL / Pune, India | Nov 2011-Apr 2015
+- Designed and built Java RESTful services, from requirements gathering with
+  business users through production release
+- Owned code reviews, testing (JUnit, Mockito), and UAT support
+
 EDUCATION
 Bachelor of Technology, Computer Science and Engineering
 Jawaharlal Nehru Technological University (JNTU), India
 
-PROFESSIONAL EXPERIENCE
-
-Senior Engineering Manager | Shipt | Dallas, TX (Remote) | Jun 2022 - Present
-- Manage a high-performing, cross-functional remote engineering team building
-  Tier-0 asynchronous distributed microservices with baked-in instrumentation,
-  monitoring, and alerting
-- Collaborate with cross-functional teams to drive efficiency gains in order
-  fulfillment
-- Develop and maintain microservices using Go, Python, PostgreSQL, Docker
-
-Software Engineering Manager | CareXM | Salt Lake City, UT | Dec 2020 - Jun 2022
-- Managed Full Stack Dev & QA teams delivering Web, Mobile & Desktop applications
-- Led modernizing tech stack by replacing MVC architecture with microservices and
-  single page application
-- Set up CI/CD pipeline, ensured successful releases with proper
-  observability & monitoring
-- Pioneered integration test automation, established
-  on-call support & incident alerting
-
-Assistant Director, Data Science | Progrexion
-Salt Lake City, UT | Nov 2016 - Dec 2020
-- Progressed over four years from Senior Software Engineer to Data Scientist to
-  Assistant Director, Data Science
-- Managed Data Science, ML, and Software Development teams
-- Led ML model integration into application workflows
-- Developed RESTful services, asynchronous batch processing
-
-Senior Application Development Consultant | Goldman Sachs | Salt Lake City, UT
-Apr 2015 - Nov 2016
-
-Senior Software Engineer | McDonald's Corporation (IGATE) | Chicago, IL / Pune, India
-Dec 2011 - Apr 2015
-
 SKILLS
-Go, Java, C#, Python, JavaScript, Relational Databases, Microservices, CI/CD,
-RESTful Services, Data Science, Machine Learning, Engineering Management,
-Agile Methodologies
-
-Also working with as of 2026, evidenced by the work described in this resume:
-Agentic AI Systems, AI Coding Agents, Model Context Protocol (MCP),
-Agent2Agent Protocol (A2A), LLM Evaluation & Benchmarking,
-Local LLM Inference (Apple MLX), Flutter, Firebase, Google Cloud Run, Docker,
-SQLite, TypeScript
+Core: Software Architecture, Distributed Systems, Go, Python, Java, C#,
+JavaScript, PostgreSQL, Redis, Apache Kafka, Microservices, RESTful APIs, CI/CD,
+Machine Learning, Data Science, Engineering Leadership
+Also working with as of 2026: Agentic AI Systems, AI Coding Agents, Model
+Context Protocol (MCP), Agent2Agent Protocol (A2A), LLM Evaluation &
+Benchmarking, Temporal, Local LLM Inference (Apple MLX), Docker, TypeScript,
+Flutter, Firebase, Google Cloud Run
 
 PUBLIC REPOS
-- buildgate (github.com/ljammula/buildgate) - unattended agent factory: ticket +
-  spec -> sandboxed build-and-verify loop -> human-reviewed pull request.
-- pi-harness (github.com/ljammula/pi-harness) - extensions, skills and prompts
-  that harden the pi coding agent (contract tests, quality gate, containment).
-- todo-kafka-service (github.com/ljammula/todo-kafka-service) - Go API, Kafka ->
-  Postgres, Redis caching and idempotency keys.
-- my-mario (ljammula.github.io/my-mario) - Super Mario Bros 1985-style browser
-  game, HTML5 Canvas + vanilla JS, live on GitHub Pages.
+- buildgate (https://github.com/ljammula/buildgate) - Unattended agent factory:
+  takes a ticket and a spec, drives a coding agent through a sandboxed
+  build-and-verify loop, and hands a human a reviewable pull request. Merge
+  stays human by design. Go + Temporal, React console, MCP endpoint.
+- pi-harness (https://github.com/ljammula/pi-harness) - Extensions, skills and
+  prompts that harden the pi coding agent: contract tests, a diff quality gate,
+  an external-effect guard, Docker containment.
+- todo-kafka-service (https://github.com/ljammula/todo-kafka-service) - Go API
+  whose writes flow through Kafka into Postgres, with Redis for caching and
+  idempotency keys; idempotent consumers and redelivery on failure.
+- my-mario (https://github.com/ljammula/my-mario) - A Super Mario-style browser
+  game, live on GitHub Pages at https://ljammula.github.io/my-mario/.
 
-Machine-readable versions: https://narsimha-jammula-dev.github.io/resume.json (JSON Resume),
-https://narsimha-jammula-dev.github.io/resume.pdf
+Machine-readable versions: https://narsimha-jammula-dev.github.io/resume.json (JSON Resume), https://narsimha-jammula-dev.github.io/resume.pdf

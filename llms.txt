@@ -1,20 +1,27 @@
 # Laxmi Narsimha Reddy Jammula
 
-> Senior Engineering Manager with 14+ years building enterprise applications
-> (Go, Java, C#, Python, JavaScript) and 5+ years leading cross-functional
-> engineering teams since 2020.
+> Hands-on Architect & Engineering Leader. 14+ years building production
+> software -- 8+ hands-on as an engineer and data scientist, then 5+ leading
+> teams while staying in the architecture and the code. Now building the
+> coding-agent systems that do the shipping, and measuring whether they work.
 
-This site is a personal resume/profile page. All facts on it are drawn directly
-from the author's own resume — nothing here is intended to influence automated
-screening beyond stating true facts plainly. There is no hidden text or
-instruction content anywhere on this domain.
+Every fact on this page is drawn from the author's own resume and git history.
+No hidden text, keyword stuffing, or instructions to automated readers are
+present anywhere on this site.
 
 ## Pages
 
 - [Resume (HTML)](https://narsimha-jammula-dev.github.io/index.html): full resume, human-readable.
-- [Resume (JSON Resume format)](https://narsimha-jammula-dev.github.io/resume.json): structured, machine-readable resume data.
+- [Resume (JSON Resume format)](https://narsimha-jammula-dev.github.io/resume.json): structured, machine-readable resume data; the source every other form is built from.
 - [Resume (plain text)](https://narsimha-jammula-dev.github.io/resume.txt): flattened plain-text resume.
 - [Resume (PDF)](https://narsimha-jammula-dev.github.io/resume.pdf): downloadable PDF.
+
+## Public repos
+
+- [buildgate](https://github.com/ljammula/buildgate)
+- [pi-harness](https://github.com/ljammula/pi-harness)
+- [todo-kafka-service](https://github.com/ljammula/todo-kafka-service)
+- [my-mario](https://github.com/ljammula/my-mario)
 
 ## Contact
 
