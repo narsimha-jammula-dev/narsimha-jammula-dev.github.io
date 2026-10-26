@@ -20,7 +20,7 @@
     "x-thesis": "14+ years building production software — 8+ hands-on as an engineer and data scientist, then 5+ leading teams while staying in the architecture and the code. Now building the coding-agent systems that do the shipping, and measuring whether they work.",
     "x-stats": [
       { "value": "14+ yrs", "label": "software engineering, 8+ of them hands-on before managing" },
-      { "value": "8–11", "label": "engineers led, owning 10–12 Tier-0 services" },
+      { "value": "8–11", "label": "engineers led, owning 10–12 microservices and agents" },
       { "value": "4", "label": "agent harnesses benchmarked head-to-head" }
     ]
   },
@@ -31,7 +31,7 @@
       "location": "Dallas, TX (Remote)",
       "startDate": "2022-06-01",
       "highlights": [
-        "Lead a team of 8–11 engineers owning 10–12 Tier-0 asynchronous microservices for shopper efficiency and order fulfillment, with instrumentation, monitoring, and alerting built in",
+        "Lead a team of 8–11 engineers owning 10–12 asynchronous microservices and agents (Tier-0 services among them) for shopper efficiency and order fulfillment, with instrumentation, monitoring, and alerting built in",
         "Help evolve Shipt's fulfillment promise through the services the team owns",
         "Hands-on architect for the team's services: data-store choices (PostgreSQL as system of record, Redis for caching and idempotency), Kafka event payloads, and API contracts between services",
         "Lead production incident mitigation on Tier-0 services and the follow-up fixes that stop a recurrence; resolve design conflicts across teams",
