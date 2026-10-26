@@ -33,7 +33,8 @@
       "highlights": [
         "Lead a team of 8–11 engineers owning 10–12 asynchronous microservices and agents (Tier-0 services among them) for shopper efficiency and order fulfillment, with instrumentation, monitoring, and alerting built in",
         "Evolved Shipt's fulfillment promise toward faster, more flexible delivery windows for customers",
-        "Built production AI agents: ask-agents that let Operations and Customer Support self-serve answers, and a human-in-the-loop agent that automates manual interventions to improve fulfillment quality",
+        "Built a human-in-the-loop agent that automates manual fulfillment interventions, cutting multi-day work to under an hour and improving fulfillment quality",
+        "Built ask-agents that let Operations and Customer Support self-serve answers, replacing manual engineering troubleshooting with agent-driven diagnosis and saving engineering time",
         "Hands-on architect for the team's services: data-store choices (PostgreSQL as system of record, Redis for caching and idempotency), Kafka event payloads, and API contracts between services",
         "Lead production incident mitigation on Tier-0 services and the follow-up fixes that stop a recurrence; resolve design conflicts across teams",
         "Set the team's direction on agentic architecture and AI coding tools and frameworks",
