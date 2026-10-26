@@ -2,10 +2,10 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json",
   "basics": {
     "name": "Laxmi Narsimha Reddy Jammula",
-    "label": "Hands-on Architect & Engineering Leader",
+    "label": "Hands-on Engineering Leader · Architecture & Agentic AI",
     "email": "jlnarsimhareddy@gmail.com",
     "url": "https://narsimha-jammula-dev.github.io/",
-    "summary": "Hands-on architect and engineering leader with 14+ years building enterprise systems in Go, Java, C#, Python, and JavaScript: 8+ years as an engineer and data scientist shipping ML models into production, then 5+ years leading engineering teams while owning the architecture decisions — data stores, event-driven systems on Kafka, API contracts, production incident response. In 2026, building and running agentic AI systems: buildgate, an open-source agent factory with a permanent human merge gate, plus coding-agent harness hardening, benchmarks, and local LLM infrastructure.",
+    "summary": "Hands-on engineering leader with 14+ years building enterprise systems in Go, Java, C#, Python, and JavaScript: 8+ years as an engineer and data scientist shipping ML models into production, then 5+ years leading engineering teams while owning the architecture decisions — data stores, event-driven systems on Kafka, API contracts, production incident response. In 2026, building and running agentic AI systems: buildgate, an open-source agent factory with a permanent human merge gate, plus coding-agent harness hardening, benchmarks, and local LLM infrastructure.",
     "location": {
       "region": "Dallas, TX",
       "countryCode": "US"
@@ -16,7 +16,7 @@
     ],
     "x-alternateName": "Narsimha",
     "x-eyebrow": "Resume · Dallas–Fort Worth, TX (Remote)",
-    "x-headline": "Hands-on architect & engineering leader · goes by \"Narsimha\"",
+    "x-headline": "Hands-on engineering leader · architecture & agentic AI · goes by \"Narsimha\"",
     "x-thesis": "14+ years building production software — 8+ hands-on as an engineer and data scientist, then 5+ leading teams while staying in the architecture and the code. Now building the coding-agent systems that do the shipping, and measuring whether they work.",
     "x-stats": [
       { "value": "14+ yrs", "label": "software engineering, 8+ of them hands-on before managing" },

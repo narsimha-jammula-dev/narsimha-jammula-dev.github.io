@@ -1,8 +1,8 @@
 # Laxmi Narsimha Reddy Jammula
 
-> Hands-on Architect & Engineering Leader. 14+ years building production
-> software -- 8+ hands-on as an engineer and data scientist, then 5+ leading
-> teams while staying in the architecture and the code. Now building the
+> Hands-on Engineering Leader | Architecture & Agentic AI. 14+ years building
+> production software -- 8+ hands-on as an engineer and data scientist, then 5+
+> leading teams while staying in the architecture and the code. Now building the
 > coding-agent systems that do the shipping, and measuring whether they work.
 
 Every fact on this page is drawn from the author's own resume and git history.

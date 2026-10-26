@@ -1,19 +1,19 @@
 LAXMI NARSIMHA REDDY JAMMULA (Narsimha)
-Hands-on Architect & Engineering Leader
+Hands-on Engineering Leader | Architecture & Agentic AI
 Email: jlnarsimhareddy@gmail.com
 GitHub: https://github.com/ljammula
 LinkedIn: https://www.linkedin.com/in/laxmi-narsimha-reddy-jammula-37486228/
 Site: https://narsimha-jammula-dev.github.io/
 
 SUMMARY
-Hands-on architect and engineering leader with 14+ years building enterprise
-systems in Go, Java, C#, Python, and JavaScript: 8+ years as an engineer and
-data scientist shipping ML models into production, then 5+ years leading
-engineering teams while owning the architecture decisions -- data stores,
-event-driven systems on Kafka, API contracts, production incident response. In
-2026, building and running agentic AI systems: buildgate, an open-source agent
-factory with a permanent human merge gate, plus coding-agent harness hardening,
-benchmarks, and local LLM infrastructure.
+Hands-on engineering leader with 14+ years building enterprise systems in Go,
+Java, C#, Python, and JavaScript: 8+ years as an engineer and data scientist
+shipping ML models into production, then 5+ years leading engineering teams
+while owning the architecture decisions -- data stores, event-driven systems on
+Kafka, API contracts, production incident response. In 2026, building and
+running agentic AI systems: buildgate, an open-source agent factory with a
+permanent human merge gate, plus coding-agent harness hardening, benchmarks, and
+local LLM infrastructure.
 
 AI & AGENTIC ENGINEERING - RECENT WORK (2026)
 Independent, hands-on work run outside of core job responsibilities. Some
