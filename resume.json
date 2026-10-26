@@ -32,7 +32,7 @@
       "startDate": "2022-06-01",
       "highlights": [
         "Lead a team of 8–11 engineers owning 10–12 asynchronous microservices and agents (Tier-0 services among them) for shopper efficiency and order fulfillment, with instrumentation, monitoring, and alerting built in",
-        "Help evolve Shipt's fulfillment promise through the services the team owns",
+        "Evolved Shipt's fulfillment promise toward faster, more flexible delivery windows for customers",
         "Hands-on architect for the team's services: data-store choices (PostgreSQL as system of record, Redis for caching and idempotency), Kafka event payloads, and API contracts between services",
         "Lead production incident mitigation on Tier-0 services and the follow-up fixes that stop a recurrence; resolve design conflicts across teams",
         "Set the team's direction on agentic architecture and AI coding tools and frameworks",
