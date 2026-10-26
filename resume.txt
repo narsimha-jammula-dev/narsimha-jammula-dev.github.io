@@ -86,6 +86,9 @@ Senior Engineering Manager | Shipt | Dallas, TX (Remote) | Jun 2022-Present
   fulfillment, with instrumentation, monitoring, and alerting built in
 - Evolved Shipt's fulfillment promise toward faster, more flexible delivery
   windows for customers
+- Built production AI agents: ask-agents that let Operations and Customer
+  Support self-serve answers, and a human-in-the-loop agent that automates
+  manual interventions to improve fulfillment quality
 - Hands-on architect for the team's services: data-store choices (PostgreSQL as
   system of record, Redis for caching and idempotency), Kafka event payloads,
   and API contracts between services
